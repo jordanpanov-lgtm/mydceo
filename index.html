@@ -542,15 +542,33 @@ function renderMain(data, query) {
   const main = document.getElementById('main');
 
   const filtered = query
-    ? data.topics.map(t => ({
-        ...t,
-        takeaways: t.takeaways.filter(tw =>
-          tw.point.toLowerCase().includes(query.toLowerCase()) ||
-          (tw.headline && tw.headline.toLowerCase().includes(query.toLowerCase())) ||
-          t.title.toLowerCase().includes(query.toLowerCase()) ||
-          t.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()))
-        )
-      })).filter(t => t.takeaways.length > 0)
+    ? (() => {
+        const q = query.toLowerCase();
+        return data.topics.map(t => {
+          // Topic-level match: title, tags, summary, or any source name/title
+          const topicMatch =
+            t.title.toLowerCase().includes(q) ||
+            t.tags.some(tag => tag.toLowerCase().includes(q)) ||
+            (t.summary && t.summary.toLowerCase().includes(q)) ||
+            t.sources.some(s =>
+              s.title.toLowerCase().includes(q) ||
+              s.outlet.toLowerCase().includes(q)
+            );
+
+          // If the whole topic matches, show all takeaways
+          if (topicMatch) return { ...t, _topicMatch: true };
+
+          // Otherwise filter to matching takeaways only
+          const matchingTakeaways = t.takeaways.filter(tw =>
+            (tw.headline && tw.headline.toLowerCase().includes(q)) ||
+            tw.point.toLowerCase().includes(q) ||
+            tw.sources.some(s => s.toLowerCase().includes(q))
+          );
+          return matchingTakeaways.length > 0
+            ? { ...t, takeaways: matchingTakeaways }
+            : null;
+        }).filter(Boolean);
+      })()
     : data.topics;
 
   if (filtered.length === 0) {
