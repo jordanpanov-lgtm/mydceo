@@ -322,7 +322,7 @@
           "id": "mh-005",
           "headline": "Fasted training for longevity; fuelled training for performance",
           "point": "Exercise goal determines fasted vs. fueled training. For longevity and metabolic health: exercise fasted — it extends fat burning and maintains insulin sensitivity. For performance (athletes, power output): take fuel beforehand. These are genuinely different protocols with different targets.",
-          "sources": ["DCEO – Dr. Ben Bikman"]
+          "sources": ["DCEO – Dr. Ben Bikman", "DCEO – Dr. Mindy Pelz"]
         },
         {
           "id": "mh-006",
@@ -347,6 +347,48 @@
           "headline": "Insulinoma is the one contraindication — detectable by fasting glucose test",
           "point": "Insulinoma (insulin-secreting pancreatic tumor) is the key contraindication for low-carb or ketogenic diets — the only condition where it becomes dangerous. A person with insulinoma cannot stop producing insulin; cutting carbs drives blood glucose dangerously low with no ketone production as backup. Detectable via: fast for 12 hours and check glucose — in healthy people glucose holds steady; in insulinoma patients it drops continuously. Always a reason for individual medical screening before major dietary changes.",
           "sources": ["DCEO – Dr. Ben Bikman"]
+        },
+        {
+          "id": "mh-010",
+          "headline": "Fasting and calorie restriction are different physiologies",
+          "point": "Calorie restriction slows metabolic rate, triggers muscle breakdown alongside fat loss, and doesn't meaningfully lower insulin. Fasting creates a different hormonal state: insulin drops to its floor, fat stores become available, and the body preferentially burns visceral fat first. The body reads fasting as 'withdraw from the bank' rather than 'incoming supply is low.'",
+          "sources": ["DCEO – Dr. Mindy Pelz"]
+        },
+        {
+          "id": "mh-011",
+          "headline": "Belly fat = insulin excess; fasting targets visceral fat first",
+          "point": "Visceral fat (the protruding belly phenotype) is a direct marker of hyperinsulinemia — insulin as a storage molecule locks fat into the abdominal cavity. Visceral fat is metabolically distinct from subcutaneous fat: it produces IL-6, TNF-alpha, and other inflammatory cytokines, driving systemic inflammation (elevated CRP). After 12 hours of fasting, glycogen stores are depleted; after that, fat mobilization begins — and visceral fat is the first depot accessed.",
+          "sources": ["DCEO – Dr. Mindy Pelz"]
+        },
+        {
+          "id": "mh-012",
+          "headline": "Fasting protocol scales with goal: 12:12 → 18:6 → 36h → extended",
+          "point": "Protocol by goal: general visceral fat reduction = start with 12:12 (12h fast, 12h eating window) for 2–3 weeks, then progress to 18:6 (18h fast, 6h window). Significant weight loss / diabetes reversal = 48h fast once a week, or 3-day water fast every 9 days with OMAD on the other days. Maintenance for healthy individuals = at minimum one 36-hour fast per month. Extended fasts (72+ days) have been done under medical supervision with black tea, black coffee, water, electrolytes (Celtic salt or Element), and optional MCT oil for hunger.",
+          "sources": ["DCEO – Dr. Mindy Pelz"]
+        },
+        {
+          "id": "mh-013",
+          "headline": "Exercise at peak fast (2h before breaking it) maximizes growth hormone",
+          "point": "Growth hormone is elevated during fasting. Training at the peak of the fast — roughly 2 hours before the eating window opens — allows you to build and retain more muscle than fed training, because growth hormone is anabolic. This applies to resistance training and HIIT. Prolonged fasted aerobic exercise is the exception, where glucose depletion may cause muscle catabolism instead.",
+          "sources": ["DCEO – Dr. Mindy Pelz"]
+        },
+        {
+          "id": "mh-014",
+          "headline": "Autophagy: fasting triggers cellular recycling and new mitochondria",
+          "point": "After roughly 12–18 hours of fasting, cells enter autophagy — the process of breaking down redundant or damaged organelles, packaging them, and exporting the debris. This includes mitochondrial autophagy (mitophagy): old, inefficient mitochondria are replaced with new ones that produce more ATP and fewer reactive oxygen species. The feeling of clarity and energy after a fast is partly explained by this mitochondrial renewal. Autophagy also exports cellular toxins and improves overall cell function.",
+          "sources": ["DCEO – Dr. Mindy Pelz"]
+        },
+        {
+          "id": "mh-015",
+          "headline": "Fasting mobilizes stem cells that repair blood vessels and boost immunity",
+          "point": "Fasting triggers the release of endothelial progenitor cells (stem cells from bone marrow) that repair the lining of blood vessels — continuously damaged by normal metabolic activity. Stem cell mobilization also produces immunocytes, explaining the well-documented reduction in infections in people who fast regularly. This repair mechanism is separate from the weight loss benefits and is active even at moderate fasting durations.",
+          "sources": ["DCEO – Dr. Mindy Pelz"]
+        },
+        {
+          "id": "mh-016",
+          "headline": "Ketones are a cleaner fuel: less oxidative stress, more BDNF",
+          "point": "Ketone metabolism produces fewer reactive oxygen species than glucose metabolism, reducing oxidative cellular damage. Ketogenesis also triggers BDNF (brain-derived neurotrophic factor) — improving reflexes, visual acuity, and cognitive function. This is an evolutionary mechanism: sharpened cognition under food scarcity helped with hunting. However, continuous ketosis is not the design state — feasting and fasting cyclically is the intended physiology.",
+          "sources": ["DCEO – Dr. Mindy Pelz"]
         }
       ],
       "sources": [
@@ -356,6 +398,14 @@
           "outlet": "Diary of a CEO (DCEO)",
           "type": "podcast",
           "date": "2026-01",
+          "url": ""
+        },
+        {
+          "id": "src-002",
+          "title": "Dr. Mindy Pelz on Fasting & Metabolic Health",
+          "outlet": "Diary of a CEO (DCEO)",
+          "type": "podcast",
+          "date": "2026-06",
           "url": ""
         }
       ]
