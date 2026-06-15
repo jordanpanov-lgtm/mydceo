@@ -12,81 +12,97 @@
       "takeaways": [
         {
           "id": "cr-001",
+          "headline": "Body makes 1–3g/day; vegans respond best to supplementation",
           "point": "The body makes 1–3g/day in the liver and brain only; 95% stored in muscle. Dietary sources are animal-based (red meat, seafood). Vegans/vegetarians respond best to supplementation since they start from zero.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-002",
+          "headline": "Dose by goal: 3–5g muscle, 8–12g bone, 10–30g stressed brain",
           "point": "Dose by goal: muscle performance = 3–5g minimum, 7–8g optimal; bone health = 8–12g (exercise required, no bone benefit without it); brain under stress = 10–20g; acute severe stress (sleep deprivation, jet lag, exam crunch) = up to 20–30g short-term.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-003",
+          "headline": "Brain only needs creatine when metabolically stressed",
           "point": "A healthy brain makes enough creatine itself. Supplemental creatine for the brain is primarily relevant under metabolic stress: sleep deprivation, jet lag, intense cognitive load, night shifts. The more stressed the brain, the higher the effective dose.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-004",
+          "headline": "Loading phase is optional — 3–5g/day saturates in 30 days",
           "point": "Loading phase (20g/day for 5–7 days) is the fastest way to saturate muscle but causes temporary GI irritation and water retention. Skipping it and taking 3–5g/day saturates muscle in ~30 days. Loading is optional.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-005",
+          "headline": "Timing doesn't matter; split doses reduce GI discomfort",
           "point": "Timing doesn't matter — morning, pre/during/post workout, before bed all equivalent. Splitting dose throughout the day reduces GI discomfort and jitteriness. Mixing into water during workout is a practical approach.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-006",
+          "headline": "Buy monohydrate only — Creapure + third-party tested",
           "point": "Use creatine monohydrate only — all safety and efficacy data is based on this form. Look for: (1) Creapure label (German, highest purity), (2) NSF certified or equivalent third-party testing. ~90% of off-the-shelf products in one test contained no creatine.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-007",
+          "headline": "High creatinine on bloodwork is a false positive, not kidney damage",
           "point": "Elevated creatinine on bloodwork while supplementing is a false positive — not kidney damage. Always tell your doctor you're taking creatine. Randomized controlled trials over many years show no detrimental kidney effects.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-008",
+          "headline": "Water retention is temporary; long-term it builds lean mass",
           "point": "Water retention only occurs during loading phase and resolves within a week. Long-term, water moves into muscle cells (osmotic effect), which actually stimulates protein synthesis. Net lean mass gain over 6 weeks: ~0.86kg, mostly lean tissue.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-009",
+          "headline": "Women benefit equally — especially post-menopausal bone preservation",
           "point": "Women respond equally well to creatine: strength, endurance, lean mass gains, fat reduction, and bone preservation in post-menopausal women (reduced rate of hip bone density loss). Estrogen decline at menopause disrupts creatine metabolism, making supplementation more relevant.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-010",
+          "headline": "No credible evidence linking creatine to hair loss",
           "point": "No evidence of hair loss at 5g doses. The original study used 20–25g/day and only showed elevated DHT within normal biological range — no follicle thinning was even measured.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-011",
+          "headline": "Cognitive benefits are invisible until you're under stress or fatigue",
           "point": "Cognitive benefits don't feel like caffeine — you won't notice a boost. They show up as maintained performance under fatigue: memory tasks, cognitive speed (Stroop test), retention under sleep deprivation. Study: 20g before 21h sleep deprivation improved next-day performance.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-012",
+          "headline": "As a depression adjunct, creatine doubled remission rates in 8 weeks",
           "point": "Mental health: as adjunct (not standalone) to antidepressants or CBT, creatine doubled remission rates in women with major depression over 8 weeks (Perry Renshaw group, Utah). Populations with depression, Alzheimer's, and concussion all show reduced baseline brain creatine.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-013",
+          "headline": "20g/day for 8 weeks raised brain creatine 11% in Alzheimer's patients",
           "point": "Alzheimer's: 20g/day for 8 weeks increased brain creatine by 11% and improved cognitive test scores in a 20-patient trial. Also produced 1.9kg improvement in hand grip strength — a key predictor of survival in dementia patients.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-014",
+          "headline": "Anti-inflammatory for endurance athletes; reduces muscle damage markers",
           "point": "Anti-inflammatory effect during long-duration endurance exercise (not acute weight training). 20g/day for 5 days pre-race reduced inflammation markers in Ironman athletes. Also decreases markers of muscle damage post-exercise.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-015",
+          "headline": "Muscle stays saturated ~1 month after stopping — no panic needed",
           "point": "Creatine levels in muscle stay elevated for ~1 month after stopping. Brain levels take 5 weeks to 3 months to return to baseline. No need to panic about missed days.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "cr-016",
+          "headline": "Safe for adolescents, elderly, and likely pregnant women",
           "point": "Safe for adolescents at recommended doses (≥1g/day for bone and muscle development). Safety profile across 25,000+ cases at 10g+/day for years is excellent. Pregnant women: evidence still emerging, currently appears safe.",
           "sources": ["DCEO – Dr. Darren Candow"]
         }
@@ -110,26 +126,31 @@
       "takeaways": [
         {
           "id": "rt-001",
+          "headline": "After 40, you lose ~1% muscle per year — only resistance training arrests it",
           "point": "After age 40, muscle mass declines ~1% per year even in trained individuals; strength declines 1–3% per year. Sedentary people lose faster. Resistance training arrests this decline — it's the only modality that does.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "rt-002",
+          "headline": "Resistance training beats cardio: same heart benefits plus muscle",
           "point": "If forced to choose one modality: resistance training over cardio. It provides most cardiovascular benefits (including VO2max improvement and mitochondrial health if programmed well) plus lean mass preservation that cardio cannot deliver.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "rt-003",
+          "headline": "Light weights to near-failure grow muscle as well as heavy",
           "point": "Lighter weights to near-failure produce the same muscle growth as heavy weights. Practical implication: on low-energy days, go lighter but push to fatigue. Heavy training is only strictly necessary for pure strength goals.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "rt-004",
+          "headline": "2 days/week full-body is the minimum effective dose",
           "point": "Minimum effective dose: 2 days/week full-body. More is better but the marginal return flattens quickly. 150 min/week moderate cardio remains the baseline guideline alongside resistance work.",
           "sources": ["DCEO – Dr. Darren Candow"]
         },
         {
           "id": "rt-005",
+          "headline": "Never too late to start — gains are real at any age",
           "point": "Never too late to start — meaningful gains are achievable at 80 or 100. But starting young builds a higher peak, which offsets the steeper age-related decline later.",
           "sources": ["DCEO – Dr. Darren Candow"]
         }
@@ -153,86 +174,110 @@
       "takeaways": [
         {
           "id": "sl-002",
+          "headline": "Consistent wake time is the single most powerful sleep lever",
           "point": "Wake up at the same time every day, 7 days a week. Wake time governs sleep quality more than bedtime — morning light triggers melanopsin cells that set a 14-hour melatonin timer. If you wake at 6am, melatonin kicks off at ~8pm; sleeping in to 8am on Saturday delays melatonin to 10pm, pushing your bedtime later.",
-          "sources": ["DCEO – Dr. Michael Bruce"]
+          "sources": ["DCEO – Dr. Matthew Walker", "DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-009",
+          "headline": "Melatonin regulates sleep rhythm — it doesn't make you sleepy",
           "point": "Melatonin is a sleep regulator (rhythm), not a sleep initiator (drive) — it does NOT make you sleepy; that's adenosine. Correct dose: 0.5–3mg max. The 10–20mg gummies sold commercially are supraphysiological. Use cases: jet lag, shift workers, melatonin deficiency (common after age 50), autism spectrum. Not appropriate for healthy children, who produce ~4x what they need. Interacts with SSRIs, birth control, blood pressure meds, and diabetes meds.",
-          "sources": ["DCEO – Dr. Michael Bruce"]
+          "sources": ["DCEO – Dr. Matthew Walker", "DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-010",
+          "headline": "Only 2 magnesium forms have clinical trials for sleep — fix deficiency first",
           "point": "Of 14+ forms of magnesium, only magnesium L-threonate (Magtein) and one other brand (Upgraded Formulas) have published clinical trials for sleep. All other forms are unstudied for sleep purposes. Fix deficiency first — 15% of patients see sleep improve from correcting magnesium alone.",
-          "sources": ["DCEO – Dr. Michael Bruce"]
+          "sources": ["DCEO – Dr. Matthew Walker", "DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-023",
+          "headline": "Sleep is driven by two systems: adenosine accumulation and circadian rhythm",
           "point": "Two sleep systems govern when you sleep: (1) Sleep drive — adenosine accumulates while awake, caffeine blocks the same receptor site (they differ by one molecule); (2) Sleep rhythm — your circadian clock, set by light. Both must align for good sleep. If either is off, you have disordered sleep.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-024",
+          "headline": "Coffee then nap immediately = 4 hours of clean energy",
           "point": "Caffeine nap (nappa latte): drink a cup of black coffee, take a 25-minute nap immediately. The nap burns through accumulated adenosine; caffeine absorbs in ~25–30 min and then blocks the receptor site. Net effect: ~4 hours of boosted energy. Useful for high-stakes performance after poor sleep.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-025",
+          "headline": "Your chronotype is genetic — Lion, Bear, Wolf, or Dolphin",
           "point": "Chronotypes are genetic (PER3 gene region, single nucleotide polymorphism) — you don't choose them. Four types: Lion (10–15%, peaks 9:30–11:30am, early riser); Bear (50–55%, peaks noon–2pm, society's default); Wolf (night owl, creative, peaks late evening); Dolphin (anxious, light sleeper, detail-obsessed, peaks afternoon–evening). Changes with age: babies = lion, adolescents = wolf, settles around age 23–24, shifts earlier again after ~50. Test at chronoquiz.com.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-026",
+          "headline": "Wait 90 min before coffee; hydrate first; stop caffeine at 2pm",
           "point": "Optimal caffeine timing: wait 90 minutes after waking before your first coffee. Sleep is dehydrating (you lose ~1 liter overnight through breath). Cortisol and adrenaline are already high on waking — caffeine adds little. At 90 min those hormones naturally drop, and caffeine then gives a bigger boost. Hydrate first: 15–20 oz (3–4 cups) of water in the first 90 minutes. Stop caffeine by 2pm (half-life is 6–8 hours).",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-027",
+          "headline": "Stop all food and alcohol 3 hours before bed; heart rate must drop below 60",
           "point": "Stop eating and drinking (including alcohol) 3 hours before bed. Digestion elevates heart rate, and you need a heart rate below 60bpm to enter unconsciousness. Alcohol destroys stage 3–4 deep sleep — the glymphatic cleaning phase that clears Alzheimer's proteins. If drinking: finish by ~7:30pm for a 10:30pm bedtime, alternate with water, consider coconut water (restores magnesium, zinc, B vitamins lost via alcohol's diuretic effect).",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-028",
+          "headline": "1 in 7 adults has sleep apnea — 80–90% don't know it",
           "point": "Sleep apnea affects ~1 in 7 adults worldwide (as common as diabetes); 80–90% undiagnosed. Signs: snoring, waking gasping, morning headaches, mood swings. Women present differently than men — more frequent arousals and morning headaches, less snoring, leading to widespread misdiagnosis as insomnia. Untreated apnea raises Alzheimer's risk by 45% (Queensland Brain Institute) by preventing deep sleep glymphatic cleaning.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-029",
+          "headline": "3am waking is universal; 4-7-8 breathing brings heart rate back down",
           "point": "Middle-of-the-night waking (1–3am) is universal — everyone's core body temperature reverses direction at this time. Most people briefly wake and fall back asleep in 30 seconds. For those who can't: don't get up to pee unless you truly need to (standing raises heart rate, making sleep harder); don't look at the clock or your phone; try 4-7-8 breathing (inhale 4 counts, hold 7, exhale 8, repeat 20 cycles — use fingers to count). It works by distracting the brain from rumination and physiologically lowering heart rate below 60.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-030",
+          "headline": "Structure the last hour as 3×20min blocks: admin, hygiene, wind-down",
           "point": "Pre-sleep wind-down structure: divide the last hour into three 20-minute blocks — (1) admin/logistics (bags packed, tomorrow prepared); (2) hygiene (brush, wash, optional shower); (3) meditation, breath work, or progressive muscle relaxation. Set a phone alarm 1 hour before target bedtime so you don't slide past it. It takes 12–15 minutes to naturally fall asleep; you need runway to land the plane.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-031",
+          "headline": "OTC PM sleep aids linked to Alzheimer's; vitamin D and GABA more useful",
           "point": "OTC sleep aids (Tylenol PM, Advil PM) contain diphenhydramine — an antihistamine. Daily use is associated with increased Alzheimer's risk. Avoid using these routinely. Valerian root (best combined with hops) reduces anxiety and can mildly slow thinking. GABA supplement (the brain's natural brake chemical) is useful for the 'wired but tired' state. Tryptophan and calcium only help if deficient. Vitamin D is a circadian pacemaker — 15 minutes of morning sun or daily supplementation helps regulate melatonin timing.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-032",
+          "headline": "Pillow goal: nose aligned with sternum; sleep on your left side",
           "point": "Pillow fit matters: goal is to keep the nose aligned with the sternum (neither tilted up nor down). Wrong pillow height causes muscle strain, pain signals, and prevents deep sleep. Key features: gusseted edge (fabric insert for side support vs. knife-edge seam), adjustable fill (zipper), material that doesn't trap heat (avoid polyester). Side sleeping on the left is preferable to right — right-side sleeping causes organs to press on the stomach, risking acid reflux.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-033",
+          "headline": "Five-senses bedroom checklist: dark, quiet, cool, fresh air, lavender",
           "point": "Sleep environment — five senses checklist: (1) Sight: dim lights 30–60min before bed, below 30 lux; (2) Sound: reduce disruptive noise; emotionality around sound matters more than the sound itself; (3) Touch: cool room + cool bed surface (target 67–68°F / 18–19°C); hack without equipment = frozen water bottles in socks on your sides; (4) Smell: diffuser with lavender or ylang-ylang (two evidence-backed scents); (5) Air: cheap air purifier in bedroom, open windows weekly. First-night effect in new environments is universal — eye masks help bypass the visual novelty.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-034",
+          "headline": "Recurring nightmares can be reprogrammed by rewriting the ending",
           "point": "Dream therapy (distinct from dream interpretation): dreams are emotional metabolism — the nightly processing of emotional states. In nightmare therapy, you write the dream, change the ending to a positive or neutral outcome, read it repeatedly before bed for 7–10 days; the brain reconsolidates the memory with the new ending and the nightmare dissipates. Do not use ChatGPT for dream interpretation — universal symbol guides have no evidence base; dreams are specific to the dreamer's context.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         },
         {
           "id": "sl-035",
+          "headline": "Never argue before bed — schedule hard conversations right after dinner",
           "point": "Argue with your partner before bed = worst possible thing for sleep (heart rate spike, emotional arousal). Schedule difficult conversations right after dinner (7–8pm window) so there's time to resolve before sleep. Reserve evening hours for low-stress interaction. Couples who sleep separately during the week and together on weekends often report better intimacy — rested people want sex; exhausted people don't.",
           "sources": ["DCEO – Dr. Michael Bruce"]
         }
       ],
       "sources": [
+        {
+          "id": "src-001",
+          "title": "Dr. Matthew Walker on Sleep Science Vol. 2",
+          "outlet": "Diary of a CEO (DCEO)",
+          "type": "podcast",
+          "date": "2026-06",
+          "url": ""
+        },
         {
           "id": "src-002",
           "title": "Dr. Michael Bruce on Sleep Science",
@@ -251,46 +296,55 @@
       "takeaways": [
         {
           "id": "mh-001",
+          "headline": "Morning insulin resistance is real — skip starchy breakfast",
           "point": "Morning insulin resistance is real and measurable: cortisol and other hormones naturally raise glucose on waking (visible on a CGM). Eating starchy or sugary food at breakfast doubles the glucose load on an already insulin-resistant system. Keep carbs out of breakfast and lunch; eat protein and fat freely instead — they have minimal to no insulin effect.",
           "sources": ["DCEO – Dr. Ben Bikman"]
         },
         {
           "id": "mh-002",
+          "headline": "Big protein/fat lunch kills evening carb cravings before they start",
           "point": "Make lunch the biggest meal of the day, high in protein and fat. A substantial lunch reduces evening carb cravings — the only cravings people reliably have. If evening cravings are a consistent problem, the fix is a bigger, more satiating lunch, not willpower.",
           "sources": ["DCEO – Dr. Ben Bikman"]
         },
         {
           "id": "mh-003",
+          "headline": "Evening snacking activates fight-or-flight exactly when you need calm",
           "point": "The single highest-leverage dietary change: stop evening snacking. Eating sugar or refined carbs before bed spikes blood glucose, which activates the sympathetic (fight-or-flight) nervous system — raising heart rate and body temperature exactly when you need the parasympathetic (calming) system to take over for sleep. This is a direct mechanistic link between late-night eating and poor sleep quality.",
           "sources": ["DCEO – Dr. Ben Bikman"]
         },
         {
           "id": "mh-004",
+          "headline": "Dinner can include carbs — the goal is low insulin all day, not always",
           "point": "Dinner can be carb-inclusive and family-oriented — the goal is not perfect ketosis 24/7 but low insulin through most of the day. Eating dinner at 5–6pm and then stopping creates a long overnight fast that compounds the metabolic benefits of the low-carb daytime period.",
           "sources": ["DCEO – Dr. Ben Bikman"]
         },
         {
           "id": "mh-005",
+          "headline": "Fasted training for longevity; fuelled training for performance",
           "point": "Exercise goal determines fasted vs. fueled training. For longevity and metabolic health: exercise fasted — it extends fat burning and maintains insulin sensitivity. For performance (athletes, power output): take fuel beforehand. These are genuinely different protocols with different targets.",
           "sources": ["DCEO – Dr. Ben Bikman"]
         },
         {
           "id": "mh-006",
+          "headline": "Exogenous BHB preserves lean mass during weight loss",
           "point": "Exogenous ketones (BHB) help the transition into a ketogenic diet and — per a recently published trial from Bikman's lab — preserved more lean muscle mass than control during a weight loss protocol. Useful as a tool during the adaptation phase or when maintaining muscle is a priority alongside fat loss.",
           "sources": ["DCEO – Dr. Ben Bikman"]
         },
         {
           "id": "mh-007",
+          "headline": "Ketones are anxiolytic, anti-depressive, and sharpen cognition",
           "point": "BHB (the main ketone) has documented brain effects beyond fuel: anxiolytic (reduces anxiety), improves depression symptoms, enhances attention, memory, and cognition. The brain and heart both preferentially use ketones when available, reducing glucose dependence. This is why ketogenic approaches are being investigated for Alzheimer's and dementia.",
           "sources": ["DCEO – Dr. Ben Bikman"]
         },
         {
           "id": "mh-008",
+          "headline": "Cancer cells run on glucose — low-carb diets amplify chemotherapy",
           "point": "Cancer cells rely primarily on glucose (and glutamine) as fuel — the Warburg effect, championed in modern research by Dr. Thomas Seyfried. Depriving cancer cells of glucose via ketogenic diet makes standard treatments like chemotherapy significantly more effective. This is a legitimate, research-backed rationale for low-carb eating beyond weight management.",
           "sources": ["DCEO – Dr. Ben Bikman"]
         },
         {
           "id": "mh-009",
+          "headline": "Insulinoma is the one contraindication — detectable by fasting glucose test",
           "point": "Insulinoma (insulin-secreting pancreatic tumor) is the key contraindication for low-carb or ketogenic diets — the only condition where it becomes dangerous. A person with insulinoma cannot stop producing insulin; cutting carbs drives blood glucose dangerously low with no ketone production as backup. Detectable via: fast for 12 hours and check glucose — in healthy people glucose holds steady; in insulinoma patients it drops continuously. Always a reason for individual medical screening before major dietary changes.",
           "sources": ["DCEO – Dr. Ben Bikman"]
         }

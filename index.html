@@ -242,33 +242,46 @@
       box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     }
     .takeaway {
-      padding: 14px 18px;
       border-bottom: 1px solid var(--border);
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 12px;
-      align-items: start;
       transition: background 0.1s;
     }
     .takeaway:last-child { border-bottom: none; }
     .takeaway:hover { background: var(--amber-bg); }
 
-    .takeaway-text {
-      font-size: 14px;
-      line-height: 1.65;
-      color: var(--text);
+    /* ── Headline row (always visible) ── */
+    .takeaway-header {
+      padding: 13px 18px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 10px;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
     }
-    .takeaway-text strong {
+    .takeaway-chevron {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      color: var(--faint);
+      transition: transform 0.18s ease, color 0.15s;
+    }
+    .takeaway.open .takeaway-chevron {
+      transform: rotate(90deg);
       color: var(--amber);
-      font-weight: 700;
     }
+    .takeaway-headline {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .takeaway.open .takeaway-headline { color: var(--amber); }
 
     .takeaway-sources {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       gap: 3px;
-      padding-top: 2px;
       min-width: 0;
     }
     .takeaway-source-tag {
@@ -279,6 +292,24 @@
       max-width: 140px;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+    /* Multi-source = slightly stronger signal */
+    .takeaway-source-tag.multi { color: var(--amber); font-weight: 500; }
+
+    /* ── Expanded detail ── */
+    .takeaway-detail {
+      display: none;
+      padding: 0 18px 14px 44px;
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--muted);
+      border-top: 1px dashed var(--border);
+      padding-top: 12px;
+    }
+    .takeaway.open .takeaway-detail { display: block; }
+    .takeaway-detail strong {
+      color: var(--amber);
+      font-weight: 700;
     }
 
     /* ── Stats bar ── */
@@ -469,13 +500,31 @@ function renderTopic(topic, query) {
 
   const tagsHtml = topic.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
 
-  const takeawaysHtml = topic.takeaways.map(tw => `
-    <div class="takeaway">
-      <div class="takeaway-text">${formatPoint(tw.point, query)}</div>
-      <div class="takeaway-sources">
-        ${tw.sources.map(s => `<span class="takeaway-source-tag">${escapeHtml(s)}</span>`).join('')}
+  const takeawaysHtml = topic.takeaways.map(tw => {
+    const multiSource = tw.sources.length > 1;
+    const sourceTags = tw.sources.map(s =>
+      `<span class="takeaway-source-tag${multiSource ? ' multi' : ''}">${escapeHtml(s)}</span>`
+    ).join('');
+
+    // Use headline if present, otherwise fall back to first sentence of point
+    const headline = tw.headline
+      ? highlight(tw.headline, query)
+      : highlight(tw.point.split('.')[0], query);
+
+    const detail = formatPoint(tw.point, query);
+
+    return `
+    <div class="takeaway" onclick="this.classList.toggle('open')">
+      <div class="takeaway-header">
+        <svg class="takeaway-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 4 10 8 6 12"/>
+        </svg>
+        <span class="takeaway-headline">${headline}</span>
+        <div class="takeaway-sources">${sourceTags}</div>
       </div>
-    </div>`).join('');
+      <div class="takeaway-detail">${detail}</div>
+    </div>`;
+  }).join('');
 
   return `
     <div class="topic-card" id="${escapeHtml(topic.id)}">
@@ -497,6 +546,7 @@ function renderMain(data, query) {
         ...t,
         takeaways: t.takeaways.filter(tw =>
           tw.point.toLowerCase().includes(query.toLowerCase()) ||
+          (tw.headline && tw.headline.toLowerCase().includes(query.toLowerCase())) ||
           t.title.toLowerCase().includes(query.toLowerCase()) ||
           t.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()))
         )
