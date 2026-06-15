@@ -242,6 +242,69 @@
           "url": ""
         }
       ]
+    },
+    {
+      "id": "metabolic-health",
+      "title": "Metabolic Health & Diet",
+      "tags": ["nutrition", "ketosis", "insulin", "longevity", "diet"],
+      "summary": "Keeping insulin low is the central lever for staying lean, metabolically healthy, and cognitively sharp. A low-carb approach through most of the day with a protein/fat focus — and stopping evening snacking — covers most of the battle. Ketones (both endogenous and exogenous) offer benefits beyond weight loss, including brain fuel, anxiety reduction, and muscle preservation during weight loss.",
+      "takeaways": [
+        {
+          "id": "mh-001",
+          "point": "Morning insulin resistance is real and measurable: cortisol and other hormones naturally raise glucose on waking (visible on a CGM). Eating starchy or sugary food at breakfast doubles the glucose load on an already insulin-resistant system. Keep carbs out of breakfast and lunch; eat protein and fat freely instead — they have minimal to no insulin effect.",
+          "sources": ["DCEO – Dr. Ben Bikman"]
+        },
+        {
+          "id": "mh-002",
+          "point": "Make lunch the biggest meal of the day, high in protein and fat. A substantial lunch reduces evening carb cravings — the only cravings people reliably have. If evening cravings are a consistent problem, the fix is a bigger, more satiating lunch, not willpower.",
+          "sources": ["DCEO – Dr. Ben Bikman"]
+        },
+        {
+          "id": "mh-003",
+          "point": "The single highest-leverage dietary change: stop evening snacking. Eating sugar or refined carbs before bed spikes blood glucose, which activates the sympathetic (fight-or-flight) nervous system — raising heart rate and body temperature exactly when you need the parasympathetic (calming) system to take over for sleep. This is a direct mechanistic link between late-night eating and poor sleep quality.",
+          "sources": ["DCEO – Dr. Ben Bikman"]
+        },
+        {
+          "id": "mh-004",
+          "point": "Dinner can be carb-inclusive and family-oriented — the goal is not perfect ketosis 24/7 but low insulin through most of the day. Eating dinner at 5–6pm and then stopping creates a long overnight fast that compounds the metabolic benefits of the low-carb daytime period.",
+          "sources": ["DCEO – Dr. Ben Bikman"]
+        },
+        {
+          "id": "mh-005",
+          "point": "Exercise goal determines fasted vs. fueled training. For longevity and metabolic health: exercise fasted — it extends fat burning and maintains insulin sensitivity. For performance (athletes, power output): take fuel beforehand. These are genuinely different protocols with different targets.",
+          "sources": ["DCEO – Dr. Ben Bikman"]
+        },
+        {
+          "id": "mh-006",
+          "point": "Exogenous ketones (BHB) help the transition into a ketogenic diet and — per a recently published trial from Bikman's lab — preserved more lean muscle mass than control during a weight loss protocol. Useful as a tool during the adaptation phase or when maintaining muscle is a priority alongside fat loss.",
+          "sources": ["DCEO – Dr. Ben Bikman"]
+        },
+        {
+          "id": "mh-007",
+          "point": "BHB (the main ketone) has documented brain effects beyond fuel: anxiolytic (reduces anxiety), improves depression symptoms, enhances attention, memory, and cognition. The brain and heart both preferentially use ketones when available, reducing glucose dependence. This is why ketogenic approaches are being investigated for Alzheimer's and dementia.",
+          "sources": ["DCEO – Dr. Ben Bikman"]
+        },
+        {
+          "id": "mh-008",
+          "point": "Cancer cells rely primarily on glucose (and glutamine) as fuel — the Warburg effect, championed in modern research by Dr. Thomas Seyfried. Depriving cancer cells of glucose via ketogenic diet makes standard treatments like chemotherapy significantly more effective. This is a legitimate, research-backed rationale for low-carb eating beyond weight management.",
+          "sources": ["DCEO – Dr. Ben Bikman"]
+        },
+        {
+          "id": "mh-009",
+          "point": "Insulinoma (insulin-secreting pancreatic tumor) is the key contraindication for low-carb or ketogenic diets — the only condition where it becomes dangerous. A person with insulinoma cannot stop producing insulin; cutting carbs drives blood glucose dangerously low with no ketone production as backup. Detectable via: fast for 12 hours and check glucose — in healthy people glucose holds steady; in insulinoma patients it drops continuously. Always a reason for individual medical screening before major dietary changes.",
+          "sources": ["DCEO – Dr. Ben Bikman"]
+        }
+      ],
+      "sources": [
+        {
+          "id": "src-001",
+          "title": "Dr. Ben Bikman – Perfect Diet & Lifestyle Plan",
+          "outlet": "Diary of a CEO (DCEO)",
+          "type": "podcast",
+          "date": "2026-01",
+          "url": ""
+        }
+      ]
     }
   ]
 }
