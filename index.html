@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Base</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Tokens ── */
+    :root {
+      --bg:        #faf7f2;
+      --surface:   #f2ede4;
+      --card:      #ffffff;
+      --border:    #e2d9cc;
+      --amber:     #c97a1a;
+      --amber-dim: #e8a44a;
+      --amber-bg:  #fff4e0;
+      --text:      #2a2218;
+      --muted:     #7a6e5f;
+      --faint:     #cfc5b4;
+      --tag-bg:    #eef6ff;
+      --tag-text:  #4a7ab5;
+      --tag-green-bg:  #edfaf3;
+      --tag-green:     #2a8a5a;
+      --tag-rose-bg:   #fff0f3;
+      --tag-rose:      #b54060;
+      --source-bar:#f5f0e8;
+      --font-mono: 'IBM Plex Mono', monospace;
+      --font-serif:'Libre Baskerville', Georgia, serif;
+      --font-sans: 'Inter', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Layout ── */
+    .shell {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      grid-template-rows: auto 1fr;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      grid-column: 1 / -1;
+      padding: 20px 28px;
+      border-bottom: 1px solid var(--border);
+      background: var(--card);
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+    .header-title {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--amber);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .header-subtitle {
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--font-mono);
+    }
+    .header-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .search-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 14px;
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      width: 220px;
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .search-box::placeholder { color: var(--muted); }
+    .search-box:focus { border-color: var(--amber-dim); box-shadow: 0 0 0 3px var(--amber-bg); }
+
+    /* ── Sidebar ── */
+    aside {
+      border-right: 1px solid var(--border);
+      background: var(--card);
+      padding: 24px 0;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .sidebar-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0 20px 10px;
+    }
+    .topic-nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 20px;
+      cursor: pointer;
+      border-left: 2px solid transparent;
+      transition: all 0.12s;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .topic-nav-item:hover {
+      color: var(--text);
+      background: var(--surface);
+    }
+    .topic-nav-item.active {
+      color: var(--amber);
+      border-left-color: var(--amber);
+      background: var(--amber-bg);
+    }
+    .nav-count {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--muted);
+      background: var(--surface);
+      border-radius: 10px;
+      padding: 1px 7px;
+    }
+    .topic-nav-item.active .nav-count { color: var(--amber); background: #fde8c2; }
+
+    .sidebar-section-gap {
+      height: 20px;
+    }
+
+    /* ── Main ── */
+    main {
+      padding: 32px 40px;
+      overflow-y: auto;
+    }
+
+    /* ── Topic card ── */
+    .topic-card {
+      margin-bottom: 40px;
+      animation: fadeIn 0.2s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+    .topic-header {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+    .topic-title {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .topic-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    /* Cycle tag colors for fun */
+    .tag {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      border-radius: 20px;
+      padding: 2px 10px;
+      letter-spacing: 0.04em;
+      font-weight: 500;
+    }
+    .tag:nth-child(3n+1) { background: var(--tag-bg);       color: var(--tag-text); }
+    .tag:nth-child(3n+2) { background: var(--tag-green-bg); color: var(--tag-green); }
+    .tag:nth-child(3n+3) { background: var(--tag-rose-bg);  color: var(--tag-rose); }
+
+    .topic-summary {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-style: italic;
+      border-left: 3px solid var(--amber-dim);
+      padding-left: 12px;
+      max-width: 680px;
+    }
+
+    /* ── Source strip ── */
+    .sources-strip {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .source-pill {
+      background: var(--amber-bg);
+      border: 1px solid #f0d9aa;
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--amber);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .source-pill .source-type {
+      color: var(--amber-dim);
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.7;
+    }
+    .source-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--amber);
+      display: inline-block;
+    }
+
+    /* ── Takeaway list ── */
+    .takeaways {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--card);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .takeaway {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: start;
+      transition: background 0.1s;
+    }
+    .takeaway:last-child { border-bottom: none; }
+    .takeaway:hover { background: var(--amber-bg); }
+
+    .takeaway-text {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--text);
+    }
+    .takeaway-text strong {
+      color: var(--amber);
+      font-weight: 700;
+    }
+
+    .takeaway-sources {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+      padding-top: 2px;
+      min-width: 0;
+    }
+    .takeaway-source-tag {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      color: var(--amber-dim);
+      white-space: nowrap;
+      max-width: 140px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      display: flex;
+      gap: 28px;
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .stat-num {
+      font-family: var(--font-mono);
+      font-size: 22px;
+      color: var(--amber);
+      font-weight: 500;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ── Empty / filtered ── */
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 13px;
+    }
+
+    /* ── Instructions callout ── */
+    .callout {
+      background: var(--amber-bg);
+      border: 1px solid #f0d9aa;
+      border-left: 3px solid var(--amber);
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 13px;
+      color: var(--muted);
+      max-width: 700px;
+    }
+    .callout strong { color: var(--text); }
+    .callout code {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      background: rgba(200,120,20,0.12);
+      padding: 1px 5px;
+      border-radius: 3px;
+      color: var(--amber);
+    }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--faint); border-radius: 3px; }
+
+    /* ── Highlight search match ── */
+    mark {
+      background: #ffe08a;
+      color: var(--text);
+      border-radius: 2px;
+      padding: 0 2px;
+    }
+
+    @media (max-width: 700px) {
+      .shell { grid-template-columns: 1fr; }
+      aside { display: none; }
+      main { padding: 20px 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="shell">
+
+  <header>
+    <span class="header-title">Knowledge Base</span>
+    <span class="header-subtitle">/ personal research log</span>
+    <div class="header-right">
+      <input class="search-box" type="text" id="search" placeholder="Search takeaways…" />
+    </div>
+  </header>
+
+  <aside id="sidebar">
+    <div class="sidebar-label">Topics</div>
+    <!-- filled by JS -->
+  </aside>
+
+  <main id="main">
+    <!-- filled by JS -->
+  </main>
+
+</div>
+
+<script>
+// ── Load data ────────────────────────────────────────────────────────────────
+async function loadData() {
+  // Try fetching data.json (works when served via GitHub Pages or local server)
+  // Falls back to embedded stub so the file previews correctly even when opened
+  // directly from disk (file:// protocol blocks fetch in some browsers).
+  try {
+    const res = await fetch('./data.json');
+    if (!res.ok) throw new Error('not found');
+    return await res.json();
+  } catch {
+    // Minimal fallback — replace with actual data.json content if needed
+    return { meta: { title: "Knowledge Base", updated: "" }, topics: [] };
+  }
+}
+
+// ── Helpers ─────────────────────────────────────────────────────────────────
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function highlight(text, query) {
+  if (!query) return escapeHtml(text);
+  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(`(${escaped})`, 'gi');
+  return escapeHtml(text).replace(re, '<mark>$1</mark>');
+}
+
+// Bold anything between colons at start, numbers with units, parenthetical labels
+function formatPoint(text, query) {
+  let out = highlight(text, query);
+  // Bold dose numbers like "3–5g", "20g", "8 weeks"
+  out = out.replace(/(\b\d+[\u2013\-]?\d*\s?(?:g|mg|kg|lb|%|weeks?|days?|months?|hours?|min)\b)/g, '<strong>$1</strong>');
+  return out;
+}
+
+// ── Render ───────────────────────────────────────────────────────────────────
+function renderSidebar(topics, activeId) {
+  const sidebar = document.getElementById('sidebar');
+  const label = sidebar.querySelector('.sidebar-label');
+  sidebar.innerHTML = '';
+  sidebar.appendChild(label);
+
+  topics.forEach(topic => {
+    const a = document.createElement('a');
+    a.className = 'topic-nav-item' + (topic.id === activeId ? ' active' : '');
+    a.href = '#' + topic.id;
+    a.innerHTML = `
+      <span>${escapeHtml(topic.title)}</span>
+      <span class="nav-count">${topic.takeaways.length}</span>
+    `;
+    sidebar.appendChild(a);
+  });
+}
+
+function renderStats(data) {
+  const totalTakeaways = data.topics.reduce((n, t) => n + t.takeaways.length, 0);
+  const totalSources   = data.topics.reduce((n, t) => n + t.sources.length, 0);
+  return `
+    <div class="stats-bar">
+      <div class="stat"><span class="stat-num">${data.topics.length}</span><span class="stat-label">Topics</span></div>
+      <div class="stat"><span class="stat-num">${totalTakeaways}</span><span class="stat-label">Takeaways</span></div>
+      <div class="stat"><span class="stat-num">${totalSources}</span><span class="stat-label">Sources</span></div>
+      ${data.meta.updated ? `<div class="stat"><span class="stat-num" style="font-size:14px;padding-top:4px">${escapeHtml(data.meta.updated)}</span><span class="stat-label">Last updated</span></div>` : ''}
+    </div>`;
+}
+
+function renderCallout() {
+  return `
+    <div class="callout">
+      <strong>Adding content:</strong> Ask Claude to extract takeaways in the <code>data.json</code> format, 
+      then use Claude Code to merge the new topic or takeaways into <code>data.json</code> and push to GitHub. 
+      Existing takeaway IDs are preserved; new ones are appended. New sources are added to a topic's 
+      <code>sources[]</code> array and referenced in each takeaway's <code>sources[]</code>.
+    </div>`;
+}
+
+function renderTopic(topic, query) {
+  const sourcesHtml = topic.sources.map(s => `
+    <div class="source-pill">
+      <span class="source-dot"></span>
+      <span>${escapeHtml(s.outlet)} — ${escapeHtml(s.title)}</span>
+      <span class="source-type">${escapeHtml(s.type)}</span>
+      ${s.date ? `<span style="color:var(--faint);font-size:10px">${escapeHtml(s.date)}</span>` : ''}
+    </div>`).join('');
+
+  const tagsHtml = topic.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
+
+  const takeawaysHtml = topic.takeaways.map(tw => `
+    <div class="takeaway">
+      <div class="takeaway-text">${formatPoint(tw.point, query)}</div>
+      <div class="takeaway-sources">
+        ${tw.sources.map(s => `<span class="takeaway-source-tag">${escapeHtml(s)}</span>`).join('')}
+      </div>
+    </div>`).join('');
+
+  return `
+    <div class="topic-card" id="${escapeHtml(topic.id)}">
+      <div class="topic-header">
+        <h2 class="topic-title">${highlight(topic.title, query)}</h2>
+        <div class="topic-tags">${tagsHtml}</div>
+      </div>
+      ${topic.summary ? `<p class="topic-summary">${highlight(topic.summary, query)}</p>` : ''}
+      <div class="sources-strip">${sourcesHtml}</div>
+      <div class="takeaways">${takeawaysHtml}</div>
+    </div>`;
+}
+
+function renderMain(data, query) {
+  const main = document.getElementById('main');
+
+  const filtered = query
+    ? data.topics.map(t => ({
+        ...t,
+        takeaways: t.takeaways.filter(tw =>
+          tw.point.toLowerCase().includes(query.toLowerCase()) ||
+          t.title.toLowerCase().includes(query.toLowerCase()) ||
+          t.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()))
+        )
+      })).filter(t => t.takeaways.length > 0)
+    : data.topics;
+
+  if (filtered.length === 0) {
+    main.innerHTML = `<div class="empty-state">No results for "${escapeHtml(query)}"</div>`;
+    return;
+  }
+
+  main.innerHTML =
+    renderStats(data) +
+    (!query ? renderCallout() : '') +
+    filtered.map(t => renderTopic(t, query)).join('');
+}
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+(async () => {
+  const data = await loadData();
+
+  // Initial render
+  renderSidebar(data.topics, null);
+  renderMain(data, '');
+
+  // Update page title
+  document.title = data.meta.title || 'Knowledge Base';
+  document.querySelector('.header-title').textContent = data.meta.title || 'Knowledge Base';
+
+  // Sidebar highlight on scroll
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        document.querySelectorAll('.topic-nav-item').forEach(a => a.classList.remove('active'));
+        const link = document.querySelector(`.topic-nav-item[href="#${e.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  data.topics.forEach(t => {
+    const el = document.getElementById(t.id);
+    if (el) observer.observe(el);
+  });
+
+  // Search
+  let debounce;
+  document.getElementById('search').addEventListener('input', e => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      const q = e.target.value.trim();
+      renderMain(data, q);
+      renderSidebar(data.topics, null);
+      // Re-observe after re-render
+      data.topics.forEach(t => {
+        const el = document.getElementById(t.id);
+        if (el) observer.observe(el);
+      });
+    }, 180);
+  });
+})();
+</script>
+</body>
+</html>
