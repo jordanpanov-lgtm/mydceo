@@ -20,7 +20,7 @@
           "id": "cr-002",
           "headline": "Dose by goal: 3–5g muscle, 8–12g bone, 10–30g stressed brain",
           "point": "Dose by goal: muscle performance = 3–5g minimum, 7–8g optimal; bone health = 8–12g (exercise required, no bone benefit without it); brain under stress = 10–20g; acute severe stress (sleep deprivation, jet lag, exam crunch) = up to 20–30g short-term.",
-          "sources": ["DCEO – Dr. Darren Candow"]
+          "sources": ["DCEO – Dr. Darren Candow", "DCEO – Dr. Rhonda Patrick"]
         },
         {
           "id": "cr-003",
@@ -32,7 +32,7 @@
           "id": "cr-004",
           "headline": "Loading phase is optional — 3–5g/day saturates in 30 days",
           "point": "Loading phase (20g/day for 5–7 days) is the fastest way to saturate muscle but causes temporary GI irritation and water retention. Skipping it and taking 3–5g/day saturates muscle in ~30 days. Loading is optional.",
-          "sources": ["DCEO – Dr. Darren Candow"]
+          "sources": ["DCEO – Dr. Darren Candow", "DCEO – Dr. Rhonda Patrick"]
         },
         {
           "id": "cr-005",
@@ -44,7 +44,7 @@
           "id": "cr-006",
           "headline": "Buy monohydrate only — Creapure + third-party tested",
           "point": "Use creatine monohydrate only — all safety and efficacy data is based on this form. Look for: (1) Creapure label (German, highest purity), (2) NSF certified or equivalent third-party testing. ~90% of off-the-shelf products in one test contained no creatine.",
-          "sources": ["DCEO – Dr. Darren Candow"]
+          "sources": ["DCEO – Dr. Darren Candow", "DCEO – Dr. Rhonda Patrick"]
         },
         {
           "id": "cr-007",
@@ -153,12 +153,44 @@
           "headline": "Never too late to start — gains are real at any age",
           "point": "Never too late to start — meaningful gains are achievable at 80 or 100. But starting young builds a higher peak, which offsets the steeper age-related decline later.",
           "sources": ["DCEO – Dr. Darren Candow"]
+        },
+        {
+          "id": "rt-006",
+          "headline": "Vigorous exercise is 4–10× more potent than moderate — guidelines are outdated",
+          "point": "Current exercise guidelines (150min moderate or 75min vigorous/week) were derived from a 2:1 calorie-burning ratio — not from disease outcome data. A new accelerometer-based study (no questionnaires) found: 1 min vigorous = 4 min moderate for all-cause mortality reduction; 1 min vigorous = 8 min moderate for cardiovascular mortality; 1 min vigorous = 10 min moderate for type 2 diabetes risk reduction. Light activity (walking around the house, 10,000 steps) provides negligible protection against most disease endpoints at any practical volume.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "rt-007",
+          "headline": "3.5 minutes of vigorous activity daily cuts cancer risk 40%",
+          "point": "Exercise snacks — short bursts of vigorous movement spread across the day (not a single gym session) — count fully toward disease reduction. Women doing just 3.5 minutes/day of vigorous activity reduced cancer risk by 40%. Men and women doing 9 minutes/day total (spread as 1-minute bursts) achieved 40% lower cancer mortality and 50% lower cardiovascular mortality. Replace the 10,000 steps goal with a '10 minutes of elevated heart rate' target. Vigorous = approximately ≥70% max heart rate; jogging, running, fast cycling, HIIT, fast resistance training movements.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "rt-008",
+          "headline": "Sitting is an independent disease risk factor — even for people who exercise",
+          "point": "Sedentary time (time spent sitting) is an independent risk factor for cancer and cardiovascular disease, separate from whether you exercise. Exercising for an hour and then sitting for 8 hours does not cancel out the sitting. Breaking up sedentary time every hour with 1–2 minutes of movement (body weight squats, jumping jacks, high knees) meaningfully reduces this risk. Standing desks help but are not sufficient alone — movement is required.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "rt-009",
+          "headline": "5 hours/week with some HIIT can reverse heart aging by 20 years",
+          "point": "Studies show that exercising approximately 5 hours per week with high-intensity interval training included can reverse cardiovascular aging by up to 20 years. This is the level required to maintain peak span — not just health span. For those who won't commit to this, 10 minutes/day of vigorous activity still provides substantial disease protection, just not peak-span maintenance.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
         }
       ],
       "sources": [
         {
           "id": "src-001",
           "title": "Dr. Darren Candow on Creatine",
+          "outlet": "Diary of a CEO (DCEO)",
+          "type": "podcast",
+          "date": "2026-06",
+          "url": ""
+        },
+        {
+          "id": "src-002",
+          "title": "Dr. Rhonda Patrick on Exercise Science & Peak Span",
           "outlet": "Diary of a CEO (DCEO)",
           "type": "podcast",
           "date": "2026-06",
@@ -310,7 +342,7 @@
           "id": "mh-003",
           "headline": "Evening snacking activates fight-or-flight exactly when you need calm",
           "point": "The single highest-leverage dietary change: stop evening snacking. Eating sugar or refined carbs before bed spikes blood glucose, which activates the sympathetic (fight-or-flight) nervous system — raising heart rate and body temperature exactly when you need the parasympathetic (calming) system to take over for sleep. This is a direct mechanistic link between late-night eating and poor sleep quality.",
-          "sources": ["DCEO – Dr. Ben Bikman"]
+          "sources": ["DCEO – Dr. Ben Bikman", "DCEO – Dr. Rhonda Patrick"]
         },
         {
           "id": "mh-004",
@@ -334,7 +366,7 @@
           "id": "mh-007",
           "headline": "Ketones are anxiolytic, anti-depressive, and sharpen cognition",
           "point": "BHB (the main ketone) has documented brain effects beyond fuel: anxiolytic (reduces anxiety), improves depression symptoms, enhances attention, memory, and cognition. The brain and heart both preferentially use ketones when available, reducing glucose dependence. This is why ketogenic approaches are being investigated for Alzheimer's and dementia.",
-          "sources": ["DCEO – Dr. Ben Bikman"]
+          "sources": ["DCEO – Dr. Ben Bikman", "DCEO – Dr. Rhonda Patrick"]
         },
         {
           "id": "mh-008",
@@ -352,7 +384,7 @@
           "id": "mh-010",
           "headline": "Fasting and calorie restriction are different physiologies",
           "point": "Calorie restriction slows metabolic rate, triggers muscle breakdown alongside fat loss, and doesn't meaningfully lower insulin. Fasting creates a different hormonal state: insulin drops to its floor, fat stores become available, and the body preferentially burns visceral fat first. The body reads fasting as 'withdraw from the bank' rather than 'incoming supply is low.'",
-          "sources": ["DCEO – Dr. Mindy Pelz"]
+          "sources": ["DCEO – Dr. Mindy Pelz", "DCEO – Dr. Rhonda Patrick"]
         },
         {
           "id": "mh-011",
@@ -389,6 +421,42 @@
           "headline": "Ketones are a cleaner fuel: less oxidative stress, more BDNF",
           "point": "Ketone metabolism produces fewer reactive oxygen species than glucose metabolism, reducing oxidative cellular damage. Ketogenesis also triggers BDNF (brain-derived neurotrophic factor) — improving reflexes, visual acuity, and cognitive function. This is an evolutionary mechanism: sharpened cognition under food scarcity helped with hunting. However, continuous ketosis is not the design state — feasting and fasting cyclically is the intended physiology.",
           "sources": ["DCEO – Dr. Mindy Pelz"]
+        },
+        {
+          "id": "mh-017",
+          "headline": "Visceral fat doubles early mortality risk and drives systemic inflammation",
+          "point": "Visceral fat is metabolically active — constantly secreting inflammatory cytokines (IL-6, TNF-alpha) that damage cells and activate the immune system. This chronic immune activation pulls energy away from the brain (causing fatigue, brain fog, lethargy) and raises metastatic cancer risk by 44%. It doubles all-cause early mortality risk. Average amounts by age (men): 1.2 lb at 30, 1.7 lb at 40, 2.2 lb at 50, 2.7 lb at 60. 50% of men over 50 have excess visceral fat; 70% of women over 50 do. You can be lean and still have dangerous visceral fat — DEXA scan or waist circumference (men >40in, women >35in) are proxies.",
+          "sources": ["DCEO – Dr. Rhonda Patrick", "DCEO – Dr. Mindy Pelz"]
+        },
+        {
+          "id": "mh-018",
+          "headline": "Visceral fat is insulin-resistant — it breaks the glucose uptake loop",
+          "point": "Unlike subcutaneous fat, visceral fat does not respond to insulin. It continuously breaks down triglycerides into free fatty acids regardless of hormonal signals, which blocks insulin from clearing glucose into the liver and muscles. The body overcompensates by producing more insulin, eventually crashing blood glucose — causing the energy slump and carb cravings ~1 hour after eating. This cycle is the beginning of insulin resistance and eventually type 2 diabetes.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "mh-019",
+          "headline": "Two weeks of 4-hour sleep added 11% visceral fat with no weight change",
+          "point": "In a study of healthy young men, sleeping only 4 hours/night for 2 weeks resulted in 11% higher visceral fat with virtually no change on the scale. The mechanism: sleep deprivation causes insulin resistance, which causes visceral fat accumulation, which causes more insulin resistance — a self-reinforcing spiral. Body composition shifts before body weight does. This is why scale weight is a poor proxy for metabolic health.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "mh-020",
+          "headline": "Aerobic exercise — not weights — is what specifically removes visceral fat",
+          "point": "Resistance training improves insulin sensitivity and overall metabolism but does not significantly move the needle on visceral fat loss. Aerobic exercise (running, cycling, swimming, jogging) with caloric deficit is the primary mechanism. Visceral fat is the first fat depot to go in any weight loss program — it responds faster than subcutaneous fat. Any protocol that creates a caloric deficit (intermittent fasting, caloric restriction, GLP-1s) will target visceral fat first.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "mh-021",
+          "headline": "Exogenous ketones pause fat burning — don't use them during fat-loss fasts",
+          "point": "Taking exogenous ketones (BHB) while fasting for fat loss is counterproductive: the body detects circulating ketones and transiently shuts down lipolysis (fat breakdown), since it no longer needs to make its own. The effect lasts ~3 hours. Exogenous ketones are best used for cognitive performance during non-fat-loss periods, not during active fasting windows targeted at visceral fat reduction.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "mh-022",
+          "headline": "GLP-1 drugs are life-changing for obesity but carry real trade-offs",
+          "point": "GLP-1 receptor agonists (semaglutide/Ozempic, tirzepatide/Mounjaro) reduce hunger by slowing gastric emptying and affecting satiety hormones — effectively mimicking caloric restriction. Visceral fat, cardiovascular, and Alzheimer's disease risk all fall with the weight loss. Key trade-offs: majority of users regain weight (sometimes with intensified hunger) if they stop; up to 40% of weight lost may come from lean mass without resistance training and adequate protein; bone loss risk; gallstone risk; signal for kidney cancer increase; black-box warning for thyroid cancer (animal data only). Appropriate for significant obesity; the case for use in people wanting to lose 10–15 lbs is weak and understudied.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
         }
       ],
       "sources": [
@@ -403,6 +471,170 @@
         {
           "id": "src-002",
           "title": "Dr. Mindy Pelz on Fasting & Metabolic Health",
+          "outlet": "Diary of a CEO (DCEO)",
+          "type": "podcast",
+          "date": "2026-06",
+          "url": ""
+        },
+        {
+          "id": "src-003",
+          "title": "Dr. Rhonda Patrick on Visceral Fat & Metabolic Health",
+          "outlet": "Diary of a CEO (DCEO)",
+          "type": "podcast",
+          "date": "2026-06",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "environmental-toxins",
+      "title": "Environmental Toxins & Endocrine Disruptors",
+      "tags": ["health", "hormones", "testosterone", "environment", "prevention"],
+      "summary": "BPA, phthalates, and PFAS (forever chemicals) are ubiquitous in plastics, food packaging, cookware, and receipts. They disrupt estrogen, testosterone, and thyroid hormone — contributing to the 20% testosterone decline in men over the past two decades and accelerating female menopause timing. Practical avoidance and sulforaphane-based detoxification are the main levers.",
+      "takeaways": [
+        {
+          "id": "et-001",
+          "headline": "Three endocrine disruptors are everywhere: BPA, phthalates, PFAS",
+          "point": "The three main endocrine-disrupting chemicals in the modern environment: (1) BPA (bisphenol A) — in plastic bottles, paper cup linings, canned food/soup linings, and thermal receipt paper; (2) Phthalates — in PVC piping, plastic food packaging, plastic wrap around meat/cheese, hair products, and cosmetics; they are fat-soluble and leach readily into fatty foods; (3) PFAS (forever chemicals) — in nonstick cookware (Teflon), stain/water/oil-resistant coatings. All three disrupt estrogen, testosterone, and thyroid hormones. They are man-made, accumulate in the body, and do not break down easily.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "et-002",
+          "headline": "Adolescent boys with high BPA had 50% lower testosterone",
+          "point": "BPA acts as an estrogen mimetic — binding to estrogen receptors and sometimes blocking them, and also binding to androgen receptors that interact with testosterone. A study in adolescent boys found those with the highest BPA levels had 50% lower testosterone than those with the lowest levels. Phthalates are the bigger testosterone disruptor: men with the highest phthalate levels had 20% lower testosterone, reduced sperm count, poorer sperm morphology, and reduced motility. Prenatal phthalate exposure in male fetuses is associated with hypospadias and undescended testicles — now affecting ~20% of newborn boys.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "et-003",
+          "headline": "Receipts are covered in BPA — don't touch them, especially with lotion on",
+          "point": "Thermal receipt paper is printed using BPA — it coats the entire surface. Cashiers who handle receipts daily have very high BPA blood levels. Applying hand lotion or sanitizer before touching receipts dramatically increases absorption (up to 100-fold) because BPA is fat-soluble and the cream carries it across the skin barrier. Request email receipts. If you must handle them, use nitrile gloves (not latex — latex doesn't block absorption). This is an under-recognised daily BPA source.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "et-004",
+          "headline": "Black plastic kitchenware contains flame retardants from recycled electronics",
+          "point": "Black plastic containers and utensils are often made from recycled electronics, which contain brominated flame retardants — carcinogenic compounds. These leach into food, especially when heated. Acidic and spicy foods accelerate chemical leaching from all plastics. Priority swaps: black plastic out immediately; replace with glass, stainless steel, or bamboo; switch spatulas and kitchen utensils to wood; replace nonstick Teflon pans with stainless steel or cast iron; replace plastic blender jug with stainless steel (friction in blending releases large quantities of microplastics).",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "et-005",
+          "headline": "Canned soup raises BPA by 1000% — store condiments in glass",
+          "point": "Canned soup is one of the highest BPA exposures in the food supply — the can lining is BPA-based plastic and the hot sterile processing during canning maximises leaching. Studies show canned soup consumption raises BPA levels by up to 1000%. Condiments (hot sauce, ketchup, mustard) in plastic containers are also a major source because acidity accelerates leaching. Switch to glass-bottled condiments. For drinking water, reverse osmosis filters remove microplastics, nanoplastics, BPA, and phthalates — but also strip trace minerals, so supplement accordingly.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "et-006",
+          "headline": "Sulforaphane (broccoli sprouts) activates the body's BPA detox pathway",
+          "point": "BPA is fat-soluble and must be converted to a water-soluble form before it can be excreted in urine. Sulforaphane — concentrated in broccoli sprouts (100× more than mature broccoli) — activates phase 2 detoxification enzymes that perform this conversion, significantly increasing urinary BPA excretion. Liposomal sulforaphane supplements (e.g. Avmacol by Nutrimax, with 12 published clinical studies) are a practical alternative to sprouting. Children with autism spectrum disorder are 30× less likely to excrete BPA efficiently — and BPA is associated with a 6× increased autism risk in children of highly exposed pregnant women.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        }
+      ],
+      "sources": [
+        {
+          "id": "src-001",
+          "title": "Dr. Rhonda Patrick on Visceral Fat & Metabolic Health",
+          "outlet": "Diary of a CEO (DCEO)",
+          "type": "podcast",
+          "date": "2026-06",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "supplements",
+      "title": "Supplements",
+      "tags": ["supplementation", "health", "longevity", "anti-aging"],
+      "summary": "The evidence-based core stack: omega-3, vitamin D3, magnesium, creatine, and a basic multivitamin covers most people's deficiencies and has cumulative longevity data behind it. Advanced additions: urolithin A for mitochondrial renewal, curcumin (phytosome form) for TNF-alpha reduction, liposomal glutathione for antioxidant support. Quality and third-party testing matter enormously — unregulated products frequently misdose or contain contaminants.",
+      "takeaways": [
+        {
+          "id": "su-001",
+          "headline": "Top 5 supplements in order: omega-3, vitamin D3, magnesium, creatine, multivitamin",
+          "point": "Dr. Rhonda Patrick's ranked evidence-based core stack: (1) Omega-3 fish oil — 90% of US population deficient; high omega-3 index = 5-year life expectancy increase, 66% lower Alzheimer's risk, slows epigenetic aging; need 1.6–2g/day EPA+DHA; keep refrigerated or frozen to prevent oxidation; target total oxidation <10. (2) Vitamin D3 — not D2; D3 deficiency accelerates biological aging; supplementing when deficient slows aging by ~2 years; vegans need D3 from lichen. (3) Magnesium — 50% of population deficient; important for 300+ enzymes, DNA repair, sleep, cancer prevention; depleted by sweating and poor diet. (4) Creatine — 5–10g/day; brain benefits at 10g+. (5) Multivitamin — Centrum Silver-equivalent daily supplementation reversed brain aging by 2.1 years and episodic memory aging by ~5 years in a large RCT (COSMOS study); also slowed epigenetic aging.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "su-002",
+          "headline": "Omega-3 is the only supplement shown to slow epigenetic aging in healthy active people",
+          "point": "In a Swiss RCT (88% already physically active participants), only omega-3 supplementation — not vitamin D or resistance training added on top — slowed biological/epigenetic aging. Combined omega-3 + vitamin D + resistance training slowed it by 4 months after one year, translated to 60% lower pre-frailty risk and reduced cancer incidence. The effect compounds over years. Test your omega-3 index (finger-prick blood spot, <$100) — target 8% for peak benefit. Supplementing without testing means you may be taking a product that isn't actually achieving the target blood level.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "su-003",
+          "headline": "Urolithin A clears damaged mitochondria — 20% life extension in mice, real human data",
+          "point": "Urolithin A (produced from pomegranate polyphenols by gut bacteria, or supplemented directly) specifically triggers mitophagy — the clearing of damaged mitochondria. 50% of people lack the gut bacteria to produce it from food. Human clinical data: 1,000mg/day increased CD8+ T cells and natural killer cells (immune rejuvenation in older adults); improved VO2max by 10% in untrained and 5% in trained athletes on top of exercise; increased hamstring strength 10–12% vs exercise alone. Animal studies showed 20% lifespan extension. Combined with exercise, it functions as mitochondrial renewal: exercise creates new mitochondria, urolithin A clears damaged ones.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "su-004",
+          "headline": "Phytosomal curcumin lowers TNF-alpha — the inflammatory driver of epigenetic aging",
+          "point": "Curcumin (from turmeric) is the most potent naturally occurring dietary compound shown to lower TNF-alpha — a major inflammatory cytokine that accelerates epigenetic aging. TNF-alpha inhibitor drugs (used for rheumatoid arthritis) reduce Alzheimer's disease risk by 50% in users. Curcumin achieves this without blunting exercise adaptations (unlike NSAIDs like ibuprofen). Standard curcumin is rapidly metabolised by the liver (it's treated as a xenobiotic). Phytosomal delivery (Meriva-type) slows hepatic clearance and dramatically improves bioavailability and cell uptake. Regular curcumin supplements are largely ineffective due to poor absorption.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "su-005",
+          "headline": "Regular glutathione supplements don't work — liposomal form is required",
+          "point": "Glutathione is a major intracellular antioxidant made inside cells. Oral glutathione supplements cannot cross the cell membrane — the body has no transporter for external glutathione. Standard 'reduced and active' glutathione supplements are essentially excreted without effect. Liposomal glutathione encapsulates the molecule in a lipid that fuses with the cell membrane, enabling intracellular delivery. Only the liposomal form has evidence of raising intracellular glutathione levels.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "su-006",
+          "headline": "Men should not supplement iron unless clinically deficient",
+          "point": "Most men do not need supplemental iron. Free iron is highly reactive — it causes oxidative stress, damages DNA, and accelerates aging. Haemochromatosis (iron overload from a common genetic variant) makes this even more dangerous. The only populations that generally need iron supplementation: pre-menopausal women (especially those who exercise heavily — ~16% are iron-deficient from menstruation + red blood cell breakdown); vegans/vegetarians who don't eat meat. Always measure iron levels before supplementing — excess iron is actively harmful.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "su-007",
+          "headline": "Supplements are unregulated — third-party testing is non-negotiable",
+          "point": "Supplement companies are not required to have the stated ingredient amount or purity verified before sale. Products frequently contain too little active ingredient, too much (melatonin and vitamin D3 have been found at 1,000–10,000× stated doses in some products), or contaminants. Third-party testing (ConsumerLab, NSF, USP) provides independent verification. This applies especially to creatine (lead contamination risk from processing), fish oil (oxidation), and melatonin (wildly variable dosing documented in multiple studies). Price alone is not a quality signal.",
+          "sources": ["DCEO – Dr. Rhonda Patrick", "DCEO – Dr. Darren Candow"]
+        }
+      ],
+      "sources": [
+        {
+          "id": "src-001",
+          "title": "Dr. Rhonda Patrick on Visceral Fat & Metabolic Health",
+          "outlet": "Diary of a CEO (DCEO)",
+          "type": "podcast",
+          "date": "2026-06",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "peak-span",
+      "title": "Peak Span & Cognitive Aging",
+      "tags": ["longevity", "cognition", "aging", "neuroscience", "performance"],
+      "summary": "Peak span — staying within 90% of your peak function across key systems — is a more ambitious target than health span (disease-free) or lifespan (duration). Most capacities peak around age 25 except crystallised intelligence (peaks ~45). Exercise, omega-3, novel learning, and sleep are the primary levers to maintain peak span across all systems simultaneously.",
+      "takeaways": [
+        {
+          "id": "ps-001",
+          "headline": "Peak span = staying within 90% of your peak — more ambitious than health span",
+          "point": "Three tiers of longevity: lifespan (years lived), health span (disease-free years), and peak span (years spent within 90% of peak function for key capacities). Most capacities peak around age 25: immune function, musculoskeletal strength and bone density, cardiorespiratory fitness (VO2max), and fluid cognitive function (processing speed, novel problem-solving). Crystallised intelligence (knowledge-based reasoning, pattern recognition from accumulated experience) peaks around age 40–45. Female reproductive capacity peaks at 25 and declines sharply to ~40.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "ps-002",
+          "headline": "Aerobic exercise, omega-3, and novel learning are the multi-system peak span levers",
+          "point": "Interventions that maintain peak span across multiple systems simultaneously: (1) Aerobic exercise — increases BDNF, grows neurons, improves brain plasticity, maintains VO2max, supports immune function and musculoskeletal health; (2) Omega-3 — slows epigenetic aging, supports brain function, reduces cancer and cardiovascular mortality; (3) Novel cognitive engagement — learning new things (not just using existing knowledge) triggers BDNF release, strengthens neural connections, builds cognitive reserve that delays dementia onset; (4) Sleep — critical for immune system aging, memory consolidation, and brain clearance. These four together are the blanket interventions; resistance training and protein intake are the targeted musculoskeletal add-ons.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "ps-003",
+          "headline": "Outsourcing thinking to AI may build cognitive debt — novelty is the key variable",
+          "point": "Brain connectivity is approximately halved when people outsource writing to AI vs. writing manually (EEG study). 83% of AI users couldn't recall details of text they had written with AI assistance. The mechanism: novelty drives BDNF and neural connection-building. If you're not genuinely engaging with new information — just accepting AI-generated output — you get the surface answer without building the underlying neural architecture. London taxi drivers (who memorise 25,000 streets) have physically enlarged hippocampi and very low Alzheimer's rates. The prescription: use AI as a collaborator, but maintain deliberate practice of independent thinking, writing by hand, and learning from first principles.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        },
+        {
+          "id": "ps-004",
+          "headline": "Visceral fat and testosterone decline drive a 200% visceral fat increase between 25–65",
+          "point": "Between ages 25 and 65, men experience approximately a 200% increase in visceral fat even if total body weight stays the same. Testosterone (which helps burn visceral fat) declines ~1%/year from age 30. Women experience an 8–10% annual visceral fat increase starting in perimenopause (typically mid-40s) as estrogen — which directs fat storage away from visceral depots — declines. Endocrine-disrupting chemicals (BPA, phthalates, PFAS) accelerate this by lowering testosterone and disrupting estrogen signalling.",
+          "sources": ["DCEO – Dr. Rhonda Patrick"]
+        }
+      ],
+      "sources": [
+        {
+          "id": "src-001",
+          "title": "Dr. Rhonda Patrick on Visceral Fat & Metabolic Health",
           "outlet": "Diary of a CEO (DCEO)",
           "type": "podcast",
           "date": "2026-06",
