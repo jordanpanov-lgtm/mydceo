@@ -144,6 +144,104 @@
           "url": ""
         }
       ]
+    },
+    {
+      "id": "sleep",
+      "title": "Sleep",
+      "tags": ["sleep", "health", "recovery", "neuroscience", "supplementation"],
+      "summary": "Sleep is governed by two systems — adenosine-driven sleep drive and the circadian rhythm — which must both align for quality rest. Consistency of wake time, pre-sleep environment, and avoiding common disruptors (alcohol, late eating, blue light) are the highest-leverage interventions.",
+      "takeaways": [
+        {
+          "id": "sl-002",
+          "point": "Wake up at the same time every day, 7 days a week. Wake time governs sleep quality more than bedtime — morning light triggers melanopsin cells that set a 14-hour melatonin timer. If you wake at 6am, melatonin kicks off at ~8pm; sleeping in to 8am on Saturday delays melatonin to 10pm, pushing your bedtime later.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-009",
+          "point": "Melatonin is a sleep regulator (rhythm), not a sleep initiator (drive) — it does NOT make you sleepy; that's adenosine. Correct dose: 0.5–3mg max. The 10–20mg gummies sold commercially are supraphysiological. Use cases: jet lag, shift workers, melatonin deficiency (common after age 50), autism spectrum. Not appropriate for healthy children, who produce ~4x what they need. Interacts with SSRIs, birth control, blood pressure meds, and diabetes meds.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-010",
+          "point": "Of 14+ forms of magnesium, only magnesium L-threonate (Magtein) and one other brand (Upgraded Formulas) have published clinical trials for sleep. All other forms are unstudied for sleep purposes. Fix deficiency first — 15% of patients see sleep improve from correcting magnesium alone.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-023",
+          "point": "Two sleep systems govern when you sleep: (1) Sleep drive — adenosine accumulates while awake, caffeine blocks the same receptor site (they differ by one molecule); (2) Sleep rhythm — your circadian clock, set by light. Both must align for good sleep. If either is off, you have disordered sleep.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-024",
+          "point": "Caffeine nap (nappa latte): drink a cup of black coffee, take a 25-minute nap immediately. The nap burns through accumulated adenosine; caffeine absorbs in ~25–30 min and then blocks the receptor site. Net effect: ~4 hours of boosted energy. Useful for high-stakes performance after poor sleep.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-025",
+          "point": "Chronotypes are genetic (PER3 gene region, single nucleotide polymorphism) — you don't choose them. Four types: Lion (10–15%, peaks 9:30–11:30am, early riser); Bear (50–55%, peaks noon–2pm, society's default); Wolf (night owl, creative, peaks late evening); Dolphin (anxious, light sleeper, detail-obsessed, peaks afternoon–evening). Changes with age: babies = lion, adolescents = wolf, settles around age 23–24, shifts earlier again after ~50. Test at chronoquiz.com.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-026",
+          "point": "Optimal caffeine timing: wait 90 minutes after waking before your first coffee. Sleep is dehydrating (you lose ~1 liter overnight through breath). Cortisol and adrenaline are already high on waking — caffeine adds little. At 90 min those hormones naturally drop, and caffeine then gives a bigger boost. Hydrate first: 15–20 oz (3–4 cups) of water in the first 90 minutes. Stop caffeine by 2pm (half-life is 6–8 hours).",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-027",
+          "point": "Stop eating and drinking (including alcohol) 3 hours before bed. Digestion elevates heart rate, and you need a heart rate below 60bpm to enter unconsciousness. Alcohol destroys stage 3–4 deep sleep — the glymphatic cleaning phase that clears Alzheimer's proteins. If drinking: finish by ~7:30pm for a 10:30pm bedtime, alternate with water, consider coconut water (restores magnesium, zinc, B vitamins lost via alcohol's diuretic effect).",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-028",
+          "point": "Sleep apnea affects ~1 in 7 adults worldwide (as common as diabetes); 80–90% undiagnosed. Signs: snoring, waking gasping, morning headaches, mood swings. Women present differently than men — more frequent arousals and morning headaches, less snoring, leading to widespread misdiagnosis as insomnia. Untreated apnea raises Alzheimer's risk by 45% (Queensland Brain Institute) by preventing deep sleep glymphatic cleaning.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-029",
+          "point": "Middle-of-the-night waking (1–3am) is universal — everyone's core body temperature reverses direction at this time. Most people briefly wake and fall back asleep in 30 seconds. For those who can't: don't get up to pee unless you truly need to (standing raises heart rate, making sleep harder); don't look at the clock or your phone; try 4-7-8 breathing (inhale 4 counts, hold 7, exhale 8, repeat 20 cycles — use fingers to count). It works by distracting the brain from rumination and physiologically lowering heart rate below 60.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-030",
+          "point": "Pre-sleep wind-down structure: divide the last hour into three 20-minute blocks — (1) admin/logistics (bags packed, tomorrow prepared); (2) hygiene (brush, wash, optional shower); (3) meditation, breath work, or progressive muscle relaxation. Set a phone alarm 1 hour before target bedtime so you don't slide past it. It takes 12–15 minutes to naturally fall asleep; you need runway to land the plane.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-031",
+          "point": "OTC sleep aids (Tylenol PM, Advil PM) contain diphenhydramine — an antihistamine. Daily use is associated with increased Alzheimer's risk. Avoid using these routinely. Valerian root (best combined with hops) reduces anxiety and can mildly slow thinking. GABA supplement (the brain's natural brake chemical) is useful for the 'wired but tired' state. Tryptophan and calcium only help if deficient. Vitamin D is a circadian pacemaker — 15 minutes of morning sun or daily supplementation helps regulate melatonin timing.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-032",
+          "point": "Pillow fit matters: goal is to keep the nose aligned with the sternum (neither tilted up nor down). Wrong pillow height causes muscle strain, pain signals, and prevents deep sleep. Key features: gusseted edge (fabric insert for side support vs. knife-edge seam), adjustable fill (zipper), material that doesn't trap heat (avoid polyester). Side sleeping on the left is preferable to right — right-side sleeping causes organs to press on the stomach, risking acid reflux.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-033",
+          "point": "Sleep environment — five senses checklist: (1) Sight: dim lights 30–60min before bed, below 30 lux; (2) Sound: reduce disruptive noise; emotionality around sound matters more than the sound itself; (3) Touch: cool room + cool bed surface (target 67–68°F / 18–19°C); hack without equipment = frozen water bottles in socks on your sides; (4) Smell: diffuser with lavender or ylang-ylang (two evidence-backed scents); (5) Air: cheap air purifier in bedroom, open windows weekly. First-night effect in new environments is universal — eye masks help bypass the visual novelty.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-034",
+          "point": "Dream therapy (distinct from dream interpretation): dreams are emotional metabolism — the nightly processing of emotional states. In nightmare therapy, you write the dream, change the ending to a positive or neutral outcome, read it repeatedly before bed for 7–10 days; the brain reconsolidates the memory with the new ending and the nightmare dissipates. Do not use ChatGPT for dream interpretation — universal symbol guides have no evidence base; dreams are specific to the dreamer's context.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        },
+        {
+          "id": "sl-035",
+          "point": "Argue with your partner before bed = worst possible thing for sleep (heart rate spike, emotional arousal). Schedule difficult conversations right after dinner (7–8pm window) so there's time to resolve before sleep. Reserve evening hours for low-stress interaction. Couples who sleep separately during the week and together on weekends often report better intimacy — rested people want sex; exhausted people don't.",
+          "sources": ["DCEO – Dr. Michael Bruce"]
+        }
+      ],
+      "sources": [
+        {
+          "id": "src-002",
+          "title": "Dr. Michael Bruce on Sleep Science",
+          "outlet": "Diary of a CEO (DCEO)",
+          "type": "podcast",
+          "date": "2026-06",
+          "url": ""
+        }
+      ]
     }
   ]
 }
