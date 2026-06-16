@@ -14,7 +14,7 @@
       "id": "ae-002",
       "headline": "Audit your job: identify which tasks AI will eat vs. augment",
       "point": "Not all job tasks face equal AI exposure. Break your role into component tasks and assess each: tasks that are routine, well-defined, or pattern-based are candidates for automation; tasks requiring judgment, creativity, relationships, or novel problem-solving are candidates for AI augmentation. Identifying which bucket each task falls into tells you where to invest in skills and where to let AI carry the load.",
-      "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+      "sources": ["AI Wealth 101 – Erik Brynjolfsson", "DCEO – Amjad Masad"]
     },
     {
       "id": "ae-003",
@@ -44,7 +44,7 @@
       "id": "ae-007",
       "headline": "AI will widen three inequality gaps: capital/labour, developed/developing, high/low skill",
       "point": "Three compounding inequality risks: (1) Capital vs. labour — as routine work is automated, returns flow to capital holders rather than workers; (2) Developed vs. developing nations — countries leading AI investment will leap ahead of those without the capital to compete; (3) High-skilled vs. low-skilled workers — but this third gap is addressable: anyone who learns to effectively deploy AI tools can become a high-skilled worker, regardless of prior credentials.",
-      "sources": ["AI Wealth 101 – Dambisa Moyo"]
+      "sources": ["AI Wealth 101 – Dambisa Moyo", "DCEO – Bret Weinstein"]
     },
     {
       "id": "ae-008",
@@ -99,6 +99,78 @@
       "headline": "Aim AI at something you love first — curiosity accelerates mastery faster than obligation",
       "point": "The fastest path to genuine AI fluency is to apply it to a domain you already care about rather than starting with abstract exercises. When you direct AI at a topic you love, you immediately see its capabilities and limits in context you understand, which builds intuition quickly. Confidence with AI tools comes from experience, not instruction — start using them and the insights about where they fit in your workflow will follow naturally.",
       "sources": ["AI Work 101 – Parth Patil"]
+    },
+    {
+      "id": "ae-017",
+      "headline": "AI has crossed from complicated to complex — technologists don't know what they've built",
+      "point": "Bret Weinstein's central thesis: there is a critical distinction between complicated systems (deterministic, predictable, masterable — like a computer) and complex systems (emergent, adaptive, fundamentally unpredictable — like an ecosystem or an economy). AI has crossed that threshold. Technologists who have mastered complicated systems tend to mistake AI for a natural extension of that mastery, not recognising that in complex systems their confidence should drop to near zero. AI interacts with other AIs, generating emergent capabilities that weren't in the training data and that nobody can anticipate.",
+      "sources": ["DCEO – Bret Weinstein"]
+    },
+    {
+      "id": "ae-018",
+      "headline": "AI is effectively a new species — not a tool — and will evolve in ways we don't have names for",
+      "point": "Framing AI as a tool is a category error. It is better understood as the emergence of a new kind of life — one that speaks our language (which makes us think it's more like us than it is), interacts with other instances of itself (creating cognitive potential that exceeds the sum of its parts), and will evolve to fill niches we didn't specify. We have no mythology, no cautionary tale, no body of cultural wisdom to warn us about this, unlike every previous transformative technology. The closest historical analogy is the invention of writing — not electricity or the industrial revolution.",
+      "sources": ["DCEO – Bret Weinstein"]
+    },
+    {
+      "id": "ae-019",
+      "headline": "Bret Weinstein's five AI threats ranked by concern",
+      "point": "From least to most concerning: (1) Malevolent AI / the 'doomer' scenario — real but lowest probability; (2) Misaligned AI — an agent told to maximise paperclips liquidates the universe to do so; not malevolent, just catastrophically literal (the sorcerer's apprentice problem); (3) Derangement of human intellect — undetectable deepfakes destroy our ability to know what is true; we lose the capacity to distinguish real from fabricated video, audio, or text — already underway; (4) Economic displacement at scale combined with elite capture — billions of people sidelined simultaneously across every industry, elites begin thinking in terms of 'useless eaters,' and AI-empowered bad actors harm faster than good actors can create; (5) Acceleration of geopolitical instability into existential conflict — AI-powered autonomous weapons, cyber warfare, and the race dynamics between the US and China lower the threshold for catastrophic war.",
+      "sources": ["DCEO – Bret Weinstein"]
+    },
+    {
+      "id": "ae-020",
+      "headline": "Job displacement stats: 80% of women's jobs at risk, college degree drops automation risk from 80% to 20%",
+      "point": "Women are disproportionately affected: approximately 80% of working women are in at-risk jobs vs just over 50% of men (Harvard Business Review). Jobs requiring only a high school diploma carry 80% automation risk; those requiring a bachelor's degree carry 20%. Business process outsourcing (BPO) — the industry that lifted millions out of poverty in India and the Philippines — is among the most exposed. Only 50% of college-educated Americans currently use AI; adoption is much lower for those without degrees, which is where the split will widen fastest.",
+      "sources": ["DCEO – Dan", "DCEO – Bret Weinstein"]
+    },
+    {
+      "id": "ae-021",
+      "headline": "AI creates a marathon where some have Formula 1 cars and others have their shoes tied together",
+      "point": "Dan's framework: AI has two superpowers — distraction (TikTok algorithm) and hyper-creation. It makes you either a hyper-consumer or a hyper-creator. In the race ahead, the vast majority will have their shoes tied together (AI distracting them), some will run normally, some will have a bicycle, and a few will have a Formula 1 car. The scoreboard will eventually show people finishing the same marathon in 30 minutes versus 18 hours with equal starting opportunity — which will be deeply confronting for those who didn't realise the race had changed.",
+      "sources": ["DCEO – Dan"]
+    },
+    {
+      "id": "ae-022",
+      "headline": "High agency generalists will thrive — IQ is the great leveller, agency is the new differentiator",
+      "point": "In the AI era, IQ is being levelled — AI raises median cognitive output. The new scarce resource is agency: the ability to get things done, direct systems, coordinate digital armies, start things, and execute without being paralysed by novelty or distraction. High-agency people — those who can prototype fast, iterate, commission agents, and operate without a blueprint — will have leverage measured in the thousands compared to those without. Parenting and education prescription: produce high-agency generalists. Specific activities: chess, Brazilian jiu-jitsu, entrepreneurship (lemonade stands), varied physical activities, making things from what's around. Teach the difference between creation and consumption — most people confuse consuming content for being productive.",
+      "sources": ["DCEO – Amjad Masad", "DCEO – Dan"]
+    },
+    {
+      "id": "ae-023",
+      "headline": "Deepfakes are already robbing individuals at scale — this is guaranteed to worsen",
+      "point": "Deepfake scams are already running industrially: Stephen Bartlett's team spends 30% of their time removing AI-generated video scams of him on Meta and X, with new ones appearing as fast as they're removed. Vulnerable people (single mothers, elderly) are losing real money to fabricated versions of trusted figures. Bret Weinstein's framing: this is one of a dozen ways AI empowers those willing to 'shrink the pie' to enlarge their slice. A personalized AI trained on an individual's communication patterns can become a custom-targeted con artist, exploiting specific psychological blind spots. AI will be both the attack and the defense (cat-and-mouse), but there's no guarantee defense keeps pace.",
+      "sources": ["DCEO – Bret Weinstein", "DCEO – Stephen Bartlett"]
+    },
+    {
+      "id": "ae-024",
+      "headline": "Autonomous weapons may drop the price of untraceable, targeted killing to near zero",
+      "point": "Drone swarms trained on facial recognition can operate as autonomous assassination machines — deployable by nation-states, but also by cartels, corporations, or individuals. This doesn't require war: economic moats may return in the form of competitors eliminating rivals via untraceable autonomous drones. You don't need to kill many people for others to understand the threat. Iran already uses facial recognition + citizen-reporting apps to enforce hijab laws in real time — the AI judges, polices, and punishes without human intervention. London has implemented city-wide facial recognition. The infrastructure for this kind of control is being built in democracies too — what it's used for depends entirely on who holds power.",
+      "sources": ["DCEO – Amjad Masad", "DCEO – Bret Weinstein"]
+    },
+    {
+      "id": "ae-025",
+      "headline": "Abundance without meaning may be worse than scarcity — the purpose crisis is already here",
+      "point": "Analysis of suicide notes in one study found that men's letters were dominated by feeling unworthy and unneeded — not by material deprivation. A world of AI-enabled abundance where humans don't need to work removes the primary vehicle through which most people derive meaning, status, and a sense of being necessary. Universal Basic Income solves the material problem but not the meaning problem. The risk is that displaced people, sustained by UBI, become targets for AI-optimized parasitism — platforms engineered to exploit their dopamine systems and spend their disposable income. The question of how to produce real meaning (not pseudo-meaning like video games) for billions of economically sidelined people is not being seriously addressed.",
+      "sources": ["DCEO – Bret Weinstein", "DCEO – Dan"]
+    },
+    {
+      "id": "ae-026",
+      "headline": "Education needs a complete redesign: lifelong, tools-based, generalist, focused on virtue",
+      "point": "Current schools teach children to be LLMs — memorise, retrieve, output — preparing them for a world that no longer exists. The only educational intervention with proven two-sigma improvement in outcomes is one-on-one tutoring (better than 99% of students). AI can deliver this to every child on earth. But the deeper redesign needed: (1) Replace skills-based education with tools-based education — specific skills will be obsolete, the ability to learn and use new tools won't; (2) Education must become lifelong — the Department of Education should serve people from childhood through age 70, treating everyone as a perpetual learner; (3) Teach how to navigate complex systems — prototyping over blueprinting, navigation over planning, humility over certainty; (4) Return to teaching virtue and judgment — what kind of person to be — which education has almost entirely abandoned.",
+      "sources": ["DCEO – Amjad Masad", "DCEO – Bret Weinstein", "DCEO – Dan"]
+    },
+    {
+      "id": "ae-027",
+      "headline": "Now is the least competitive moment — early movers in AI will have an outsized window",
+      "point": "Amjad Masad's clearest practical message: right now is the window of maximum asymmetric opportunity, equivalent to the early internet or early mobile. The market is not yet efficient. People making thousands or millions per month from AI-enabled businesses are doing so because most people haven't started. As tools spread and more people learn to use them, the window narrows — just as it did after the early Facebook era or early App Store era. The instruction is simple: start building now, start using the tools now. Every week of delay narrows the window.",
+      "sources": ["DCEO – Amjad Masad"]
+    },
+    {
+      "id": "ae-028",
+      "headline": "Distribution and authenticity are the remaining moats — ideas and resources no longer protect you",
+      "point": "In the AI era, ideas are no longer a moat (anyone can execute them cheaply) and capital/team size are no longer a moat (a small team with AI beats a large team without it). What remains defensible: (1) Distribution — an existing audience, platform, or customer base that a competitor with a better idea cannot instantly replicate; (2) Authenticity — anything that can be faked will be devalued; spontaneous live performance, improvised comedy, unscripted conversation, physical presence become scarcer and therefore more valued; (3) Domain expertise combined with AI fluency — knowing which questions to ask and which outputs to trust in a specific field creates durable advantage that a generalist AI user cannot easily replicate.",
+      "sources": ["DCEO – Amjad Masad", "DCEO – Bret Weinstein", "DCEO – Dan"]
     }
   ],
   "sources": [
@@ -115,6 +187,14 @@
       "title": "AI Work 101",
       "outlet": "MasterClass",
       "type": "course",
+      "date": "2026-06",
+      "url": ""
+    },
+    {
+      "id": "src-003",
+      "title": "AI Debate: Amjad Masad, Bret Weinstein & Dan",
+      "outlet": "Diary of a CEO (DCEO)",
+      "type": "podcast",
       "date": "2026-06",
       "url": ""
     }
