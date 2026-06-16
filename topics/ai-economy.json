@@ -122,7 +122,7 @@
       "id": "ae-020",
       "headline": "Job displacement stats: 80% of women's jobs at risk, college degree drops automation risk from 80% to 20%",
       "point": "Women are disproportionately affected: approximately 80% of working women are in at-risk jobs vs just over 50% of men (Harvard Business Review). Jobs requiring only a high school diploma carry 80% automation risk; those requiring a bachelor's degree carry 20%. Business process outsourcing (BPO) — the industry that lifted millions out of poverty in India and the Philippines — is among the most exposed. Only 50% of college-educated Americans currently use AI; adoption is much lower for those without degrees, which is where the split will widen fastest.",
-      "sources": ["DCEO – Dan", "DCEO – Bret Weinstein"]
+      "sources": ["DCEO – Dan", "DCEO – Bret Weinstein", "DCEO – Karen Hao"]
     },
     {
       "id": "ae-021",
@@ -152,7 +152,7 @@
       "id": "ae-025",
       "headline": "Abundance without meaning may be worse than scarcity — the purpose crisis is already here",
       "point": "Analysis of suicide notes in one study found that men's letters were dominated by feeling unworthy and unneeded — not by material deprivation. A world of AI-enabled abundance where humans don't need to work removes the primary vehicle through which most people derive meaning, status, and a sense of being necessary. Universal Basic Income solves the material problem but not the meaning problem. The risk is that displaced people, sustained by UBI, become targets for AI-optimized parasitism — platforms engineered to exploit their dopamine systems and spend their disposable income. The question of how to produce real meaning (not pseudo-meaning like video games) for billions of economically sidelined people is not being seriously addressed.",
-      "sources": ["DCEO – Bret Weinstein", "DCEO – Dan"]
+      "sources": ["DCEO – Bret Weinstein", "DCEO – Dan", "DCEO – Karen Hao"]
     },
     {
       "id": "ae-026",
@@ -171,6 +171,60 @@
       "headline": "Distribution and authenticity are the remaining moats — ideas and resources no longer protect you",
       "point": "In the AI era, ideas are no longer a moat (anyone can execute them cheaply) and capital/team size are no longer a moat (a small team with AI beats a large team without it). What remains defensible: (1) Distribution — an existing audience, platform, or customer base that a competitor with a better idea cannot instantly replicate; (2) Authenticity — anything that can be faked will be devalued; spontaneous live performance, improvised comedy, unscripted conversation, physical presence become scarcer and therefore more valued; (3) Domain expertise combined with AI fluency — knowing which questions to ask and which outputs to trust in a specific field creates durable advantage that a generalist AI user cannot easily replicate.",
       "sources": ["DCEO – Amjad Masad", "DCEO – Bret Weinstein", "DCEO – Dan"]
+    },
+    {
+      "id": "ae-029",
+      "headline": "AGI has no agreed definition — companies redefine it to suit whatever audience they're pitching",
+      "point": "The term 'artificial general intelligence' has no scientific definition and no measurable goalposts. The field was named 'artificial intelligence' in 1956 specifically by pegging it to human intelligence — a concept psychology, biology, and neurology have never been able to consistently define. OpenAI has used at least four different definitions of AGI: cure cancer and solve poverty (for Congress), the ultimate digital assistant (for consumers), a system generating $100 billion in revenue (for Microsoft), and highly autonomous systems outperforming humans in most economically valuable work (on their own website). This definitional flexibility allows these companies to claim perpetual progress toward a goal they have the power to redefine whenever convenient.",
+      "sources": ["DCEO – Karen Hao"]
+    },
+    {
+      "id": "ae-030",
+      "headline": "The AI industry operates like an empire — data colonialism, labour exploitation, knowledge monopoly",
+      "point": "Karen Hao's central framework: the large AI companies are empires in the historical sense, not merely businesses. Three parallels: (1) Resource extraction — they claim data and intellectual property of artists, writers, and creators without compensation, just as empires claimed land; (2) Labour exploitation — they contract hundreds of thousands of data annotation workers globally at low wages in dehumanising conditions, while simultaneously building tools designed to replace those workers; (3) Knowledge monopoly — they employ and fund the majority of AI researchers, setting the research agenda and suppressing inconvenient findings (Google fired the co-leads of its ethical AI team for publishing a critical paper on large language models). Just as fossil fuel companies bankrolling climate scientists would distort climate research, AI companies bankrolling AI safety research distorts what gets studied and published.",
+      "sources": ["DCEO – Karen Hao"]
+    },
+    {
+      "id": "ae-031",
+      "headline": "The existential risk narrative is a power tool, not a genuine prediction",
+      "point": "AI executives use the threat of catastrophic outcomes strategically — not necessarily because they believe it, but because it justifies concentrating control. The structure of the argument is: (a) AI could destroy humanity if developed badly; (b) therefore only we should develop it; (c) therefore give us more capital, more regulatory latitude, and more trust. Both the utopian promise (cure cancer, age of abundance) and the dystopian threat (civilisation-ending AI) serve the same function: justifying an anti-democratic approach where a small group of executives make decisions affecting billions of people with no broad participation. Many executives eventually lose track of whether they genuinely believe these narratives or are simply embodying them — cognitive dissonance resolves by making the myth feel real.",
+      "sources": ["DCEO – Karen Hao"]
+    },
+    {
+      "id": "ae-032",
+      "headline": "The brain-as-statistical-engine hypothesis drives the whole industry — but it's unproven",
+      "point": "The belief that AI systems will eventually equal or exceed human intelligence rests on a specific, unproven scientific hypothesis held by researchers like Geoffrey Hinton and Ilya Sutskever: that the brain is fundamentally a statistical engine. If this is true, then building larger statistical models will eventually produce human-equivalent intelligence. Neuroscientists and psychologists largely disagree. This matters because the entire industrial project — the data centres, the resource consumption, the labour exploitation — is being justified by a hypothesis that is not scientific consensus. The industry has simply adopted this hypothesis and pursued it with enormous capital, regardless of the debate.",
+      "sources": ["DCEO – Karen Hao"]
+    },
+    {
+      "id": "ae-033",
+      "headline": "AI capabilities are jagged, not general — companies choose which capabilities to build based on revenue",
+      "point": "Current AI models are not generally intelligent in the way the word implies. They are strong in some areas and weak in others — what researchers call the 'jagged frontier.' The reason: companies do not improve all capabilities equally. They pick which capabilities to develop based on which industries will pay the most. OpenAI's internal documents show they focused on finance, law, medicine, and commerce — because those sectors could pay for the services. Military and cyber capabilities are a separate, deliberate choice that requires specifically training models on that domain. The argument that 'scaling AI will inevitably produce superior military capability' conflates general scale with targeted capability development.",
+      "sources": ["DCEO – Karen Hao"]
+    },
+    {
+      "id": "ae-034",
+      "headline": "The broken career ladder: AI gouges entry and mid-tier jobs, leaving only top and bottom",
+      "point": "Every wave of automation creates some higher-skilled jobs and some lower-skilled jobs — but gouges the middle. The current AI wave is removing the rungs of the career ladder: entry-level and mid-tier professional jobs (marketing, coding, legal research, creative work) are being automated or de-valued, while demand rises for either high-expertise roles or low-paid data annotation work. A laid-off marketer ends up doing data annotation — training the model on the very skill they were laid off for, which will perpetuate more layoffs in that field. Award-winning Hollywood directors are secretly doing data annotation to pay their bills. The career progression path that allowed previous generations to move from junior to senior roles no longer has its intermediate steps.",
+      "sources": ["DCEO – Karen Hao"]
+    },
+    {
+      "id": "ae-035",
+      "headline": "Data centres extract from the most vulnerable communities — power, water, and clean air",
+      "point": "AI data centres are disproportionately sited in vulnerable, working-class, and minority communities. They cause: (1) Power cost increases and grid reliability decreases for local residents; (2) Competition for fresh water in drought-affected communities; (3) Air pollution — Elon Musk's Colossus supercomputer in Memphis was powered by 35 methane gas turbines without notifying the surrounding Black and brown community, which discovered the facility when they smelled what they thought was a gas leak. The community already had some of the highest lung cancer rates in the region. The same communities losing jobs to AI automation are also bearing the environmental health cost of building the infrastructure that powers it.",
+      "sources": ["DCEO – Karen Hao"]
+    },
+    {
+      "id": "ae-036",
+      "headline": "Bicycles vs. rockets: targeted AI with small datasets delivers enormous benefit at a fraction of the cost",
+      "point": "Karen Hao's key practical distinction: not all AI is equivalent. 'Rocket' AI — large language models trained on everything — consumes extraordinary resources, exploits vast amounts of labour, and benefits primarily those who can afford or access it. 'Bicycle' AI — targeted models trained on small, curated datasets for a specific purpose — delivers comparable or greater benefit at a fraction of the cost. Example: DeepMind's AlphaFold (Nobel Prize in Chemistry 2024) uses only protein structure and amino acid sequence data to predict protein folding, accelerating drug discovery globally at minimal environmental cost. The choice to build rockets rather than bicycles is a political and economic choice, not a technical necessity.",
+      "sources": ["DCEO – Karen Hao"]
+    },
+    {
+      "id": "ae-037",
+      "headline": "80% of Americans want AI regulated — public pressure is already stalling data centre projects",
+      "point": "The narrative that nothing can stop the AI industry's current trajectory is false. 80% of Americans in recent polling support regulation of the AI industry — a degree of consensus almost without precedent in contemporary US politics. Community protests against data centres have stalled and in some cases completely blocked projects. Artists and writers are suing AI companies for intellectual property infringement and winning public debate. The AI companies' internal revenue projections require near-universal adoption and frictionless data centre development — meaning organised friction at any of these points meaningfully disrupts their plans. Individual actions: withhold data where possible, participate in local debates about data centre placement, support IP litigation, advocate for regulation.",
+      "sources": ["DCEO – Karen Hao"]
     }
   ],
   "sources": [
@@ -193,6 +247,14 @@
     {
       "id": "src-003",
       "title": "AI Debate: Amjad Masad, Bret Weinstein & Dan",
+      "outlet": "Diary of a CEO (DCEO)",
+      "type": "podcast",
+      "date": "2026-06",
+      "url": ""
+    },
+    {
+      "id": "src-004",
+      "title": "Karen Hao – Empire of AI",
       "outlet": "Diary of a CEO (DCEO)",
       "type": "podcast",
       "date": "2026-06",
