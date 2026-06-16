@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Jordan's Knowledge Base",
-    "updated": "2026-06-15"
+    "updated": "2026-06-16"
   },
   "topics": [
     {
@@ -637,6 +637,78 @@
           "title": "Dr. Rhonda Patrick on Visceral Fat & Metabolic Health",
           "outlet": "Diary of a CEO (DCEO)",
           "type": "podcast",
+          "date": "2026-06",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "ai-economy",
+      "title": "AI & the Economy",
+      "tags": ["AI", "work", "wealth", "career", "economics"],
+      "summary": "The economy is transitioning from physical assets to digital ones, with AI creating 'digital labor' that infuses every industry. Individuals who understand this shift and actively use AI tools will be on the right side of the wealth and power redistribution — those who don't risk being displaced by it.",
+      "takeaways": [
+        {
+          "id": "ae-001",
+          "headline": "AI creates digital labor — bits now do the work, not just store information",
+          "point": "For millennia wealth was tied to physical things. Computers and the internet shifted value to software and data (bits). AI is the next step: bits are no longer just materials — they now perform work. Marketing campaigns, legal agreements, design, tutoring — all achievable in minutes without hiring specialists. This is 'digital labor' and it is infusing every industry, every occupation, every home.",
+          "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+        },
+        {
+          "id": "ae-002",
+          "headline": "Audit your job: identify which tasks AI will eat vs. augment",
+          "point": "Not all job tasks face equal AI exposure. The practical exercise is to break your role into its component tasks and assess each: tasks that are routine, well-defined, or pattern-based are candidates for automation; tasks requiring judgment, creativity, relationships, or novel problem-solving are candidates for AI augmentation (where AI makes you faster or better rather than replacing you). Identifying which bucket each task falls into tells you where to invest in skills and where to let AI carry the load.",
+          "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+        },
+        {
+          "id": "ae-003",
+          "headline": "Build digital assets — they scale without factories, offices, or additional labor",
+          "point": "Digital assets (content, software, platforms, data, online audiences, intellectual property) have near-zero marginal cost to replicate and can travel at the speed of light. This means a single individual can leverage themselves in ways previous generations never could — one piece of work can reach and serve millions. The strategic priority is to build assets that compound and act as force multipliers, rather than trading only time for money.",
+          "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+        },
+        {
+          "id": "ae-004",
+          "headline": "Data is a superpower — more data means better navigation of economic shifts",
+          "point": "In the AI era, access to data and the ability to interpret it is a competitive advantage for both businesses and individuals. Using AI tools to process data about markets, consumer trends, and economic shifts allows faster and better decisions than relying on intuition alone. The gap between those who actively use AI to optimize their decisions and those who don't will widen over time.",
+          "sources": ["AI Wealth 101 – Michelle Meyer"]
+        },
+        {
+          "id": "ae-005",
+          "headline": "Power is shifting to those who actively use AI tools — not just those who build them",
+          "point": "AI is no longer limited to Silicon Valley. The redistribution of capability is happening across every sector — a radiologist reading scans, a farmer deciding how to plant, a coder reaching global clients. Power is accruing to businesses embracing AI tools and consumers actively using them, not just to the companies building the technology. The window to gain early-adopter advantage is open now.",
+          "sources": ["AI Wealth 101 – Michelle Meyer", "AI Wealth 101 – Erik Brynjolfsson"]
+        },
+        {
+          "id": "ae-006",
+          "headline": "Race with the machine, not against it — augmentation wins, replacement loses",
+          "point": "The critical strategic choice is whether to use AI to replace human work (automating tasks) or to augment it (making humans more capable). Individuals and organisations that frame AI as a tool to do more of what humans do uniquely — creativity, relationships, judgment, values — will reach new heights. Those who try to compete directly with AI on the tasks AI does best will lose. The framing is: race with the machine, not against it.",
+          "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+        },
+        {
+          "id": "ae-007",
+          "headline": "AI will widen three inequality gaps: capital/labour, developed/developing, high/low skill",
+          "point": "Three compounding inequality risks: (1) Capital vs. labour — as routine work is automated, returns flow to capital holders rather than workers, widening the gap; (2) Developed vs. developing nations — countries leading AI investment will leap ahead of those without the capital to compete; (3) High-skilled vs. low-skilled workers — but this third gap is addressable: anyone who learns to effectively deploy AI tools can become a high-skilled worker, regardless of prior credentials. The ability to use AI well is itself the new high-value skill.",
+          "sources": ["AI Wealth 101 – Dambisa Moyo"]
+        },
+        {
+          "id": "ae-008",
+          "headline": "Use AI to explore your own possibilities — it's a better career advisor than most",
+          "point": "AI can research product ideas for entrepreneurs, map industries for job-seekers, and identify courses for students — and do it faster and more comprehensively than most human advisors. The practical recommendation: use AI as a dialogue partner to flesh out career and life possibilities, not just as a task executor. Having a conversation with AI about your options — where you want to go, what constraints you have — surfaces paths you wouldn't have found alone. The number of possibilities available today exceeds any previous era.",
+          "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+        },
+        {
+          "id": "ae-009",
+          "headline": "Technology is not destiny — human values determine whether AI helps or harms",
+          "point": "The direction AI takes is a choice, not an inevitability. As AI becomes more powerful, human values become more important — not less. The decisions about whether AI is used primarily to automate (replacing people) or to augment (empowering people) are made by individuals, companies, and policymakers. Understanding AI well enough to participate in those decisions — rather than having them made for you — is itself a form of power. The time to engage with that choice is now.",
+          "sources": ["AI Wealth 101 – Erik Brynjolfsson", "AI Wealth 101 – Michelle Meyer"]
+        }
+      ],
+      "sources": [
+        {
+          "id": "src-001",
+          "title": "AI Wealth 101",
+          "outlet": "Online Course",
+          "type": "course",
           "date": "2026-06",
           "url": ""
         }
