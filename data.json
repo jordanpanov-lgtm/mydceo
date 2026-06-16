@@ -682,7 +682,7 @@
           "id": "ae-006",
           "headline": "Race with the machine, not against it — augmentation wins, replacement loses",
           "point": "The critical strategic choice is whether to use AI to replace human work (automating tasks) or to augment it (making humans more capable). Individuals and organisations that frame AI as a tool to do more of what humans do uniquely — creativity, relationships, judgment, values — will reach new heights. Those who try to compete directly with AI on the tasks AI does best will lose. The framing is: race with the machine, not against it.",
-          "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+          "sources": ["AI Wealth 101 – Erik Brynjolfsson", "AI Work 101 – Erik Brynjolfsson"]
         },
         {
           "id": "ae-007",
@@ -700,7 +700,49 @@
           "id": "ae-009",
           "headline": "Technology is not destiny — human values determine whether AI helps or harms",
           "point": "The direction AI takes is a choice, not an inevitability. As AI becomes more powerful, human values become more important — not less. The decisions about whether AI is used primarily to automate (replacing people) or to augment (empowering people) are made by individuals, companies, and policymakers. Understanding AI well enough to participate in those decisions — rather than having them made for you — is itself a form of power. The time to engage with that choice is now.",
-          "sources": ["AI Wealth 101 – Erik Brynjolfsson", "AI Wealth 101 – Michelle Meyer"]
+          "sources": ["AI Wealth 101 – Erik Brynjolfsson", "AI Wealth 101 – Michelle Meyer", "AI Work 101 – Parth Patil"]
+        },
+        {
+          "id": "ae-010",
+          "headline": "Think of AI as a super-smart teammate, not a tool — it changes how you work",
+          "point": "The mental model shift that unlocks AI's value: stop treating it as software you operate and start treating it as a highly capable colleague you collaborate with. This reframe changes how you assign work, how you communicate with it, what you ask of it, and how you iterate on outputs. The most valuable employees in an AI world think like entrepreneurs — they direct, delegate, and synthesise rather than execute tasks themselves.",
+          "sources": ["AI Work 101 – Erik Brynjolfsson", "AI Work 101 – Cat Goetze"]
+        },
+        {
+          "id": "ae-011",
+          "headline": "Redesign your day: identify high-leverage tasks and offload the rest to AI",
+          "point": "The practical first step is a personal workflow audit — mapping your day into tasks that require your unique judgment, creativity, or relationships (high-leverage, keep these) versus tasks that are research, drafting, formatting, summarising, or routine processing (offloadable). Offloading the second category to AI frees time to concentrate exclusively on the first. The goal is to become a high-leverage worker — someone whose value is in direction and judgment, not execution volume.",
+          "sources": ["AI Work 101 – Cat Goetze"]
+        },
+        {
+          "id": "ae-012",
+          "headline": "Prompting is a skill: context + constraints + iteration is the formula",
+          "point": "Effective prompting is not about magic phrases — it is about giving AI sufficient context (who you are, what you need, why), clear constraints (format, length, tone, what to avoid), and then iterating on the output rather than accepting the first result. The 'Chief Question Officer' (CQO) framing: the new high-value skill is not having the right answer but asking the right questions. The quality of your output is directly proportional to the quality of your prompt and your willingness to refine it.",
+          "sources": ["AI Work 101 – Erik Brynjolfsson", "AI Work 101 – Parth Patil"]
+        },
+        {
+          "id": "ae-013",
+          "headline": "Multimodal AI means one person can now produce text, images, audio, video, and code",
+          "point": "Modern AI is not limited to text. A single person can now generate marketing copy, product images, audio narration, short-form video, and functional code — all without specialists. This is the practical mechanism behind the 'one-person unicorn': the combination of multimodal AI tools removes the team-size bottleneck that previously constrained individual output. The skill is knowing which tool to deploy for which task and how to chain them together.",
+          "sources": ["AI Work 101 – Parth Patil", "AI Work 101 – Cat Goetze"]
+        },
+        {
+          "id": "ae-014",
+          "headline": "'Vibe coding' — build functional software through natural language, no coding required",
+          "point": "Vibe coding is the practice of describing what you want software to do in plain language and having AI generate the code. This removes the technical barrier to building digital tools — anyone can now create a sales tracker, a marketing automation, a data dashboard, or a simple app without learning to code. The skill required is the ability to clearly describe desired functionality and to iterate on AI-generated outputs. This is one of the highest-leverage applications of AI for non-technical professionals.",
+          "sources": ["AI Work 101 – Parth Patil"]
+        },
+        {
+          "id": "ae-015",
+          "headline": "AI agents let you orchestrate multiple systems simultaneously — you become a CEO of automation",
+          "point": "AI agents are systems that can take actions, chain tasks, and operate across multiple tools autonomously — browsing the web, writing files, sending data between systems. Orchestrating multiple agents lets one person manage workflows that previously required a team. The mindset shift is from 'doing tasks' to 'directing processes': you define the goal and constraints, the agents execute. This is the literal version of the 'CEO of an army of virtual agents' — accessible now to any individual willing to learn the tools.",
+          "sources": ["AI Work 101 – Parth Patil", "AI Work 101 – Erik Brynjolfsson"]
+        },
+        {
+          "id": "ae-016",
+          "headline": "Aim AI at something you love first — curiosity accelerates mastery faster than obligation",
+          "point": "The fastest path to genuine AI fluency is to apply it to a domain you already care about rather than starting with abstract exercises. When you direct AI at a topic you love, you immediately see its capabilities and limits in context you understand, which builds intuition quickly. Confidence with AI tools comes from experience, not instruction — start using them and the sparks of insight about where they fit in your workflow will follow naturally.",
+          "sources": ["AI Work 101 – Parth Patil"]
         }
       ],
       "sources": [
@@ -708,6 +750,14 @@
           "id": "src-001",
           "title": "AI Wealth 101",
           "outlet": "Online Course",
+          "type": "course",
+          "date": "2026-06",
+          "url": ""
+        },
+        {
+          "id": "src-002",
+          "title": "AI Work 101",
+          "outlet": "MasterClass",
           "type": "course",
           "date": "2026-06",
           "url": ""
