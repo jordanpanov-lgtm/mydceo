@@ -1,0 +1,166 @@
+{
+  "id": "metabolic-health",
+  "title": "Metabolic Health & Diet",
+  "tags": ["nutrition", "ketosis", "insulin", "longevity", "diet"],
+  "summary": "Keeping insulin low is the central lever for staying lean, metabolically healthy, and cognitively sharp. A low-carb approach through most of the day with a protein/fat focus — and stopping evening snacking — covers most of the battle. Ketones offer benefits beyond weight loss, including brain fuel, anxiety reduction, and muscle preservation.",
+  "takeaways": [
+    {
+      "id": "mh-001",
+      "headline": "Morning insulin resistance is real — skip starchy breakfast",
+      "point": "Morning insulin resistance is real and measurable: cortisol and other hormones naturally raise glucose on waking (visible on a CGM). Eating starchy or sugary food at breakfast doubles the glucose load on an already insulin-resistant system. Keep carbs out of breakfast and lunch; eat protein and fat freely instead — they have minimal to no insulin effect.",
+      "sources": ["DCEO – Dr. Ben Bikman"]
+    },
+    {
+      "id": "mh-002",
+      "headline": "Big protein/fat lunch kills evening carb cravings before they start",
+      "point": "Make lunch the biggest meal of the day, high in protein and fat. A substantial lunch reduces evening carb cravings — the only cravings people reliably have. If evening cravings are a consistent problem, the fix is a bigger, more satiating lunch, not willpower.",
+      "sources": ["DCEO – Dr. Ben Bikman"]
+    },
+    {
+      "id": "mh-003",
+      "headline": "Evening snacking activates fight-or-flight exactly when you need calm",
+      "point": "The single highest-leverage dietary change: stop evening snacking. Eating sugar or refined carbs before bed spikes blood glucose, which activates the sympathetic (fight-or-flight) nervous system — raising heart rate and body temperature exactly when you need the parasympathetic (calming) system for sleep. This is a direct mechanistic link between late-night eating and poor sleep quality.",
+      "sources": ["DCEO – Dr. Ben Bikman", "DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "mh-004",
+      "headline": "Dinner can include carbs — the goal is low insulin all day, not always",
+      "point": "Dinner can be carb-inclusive and family-oriented — the goal is not perfect ketosis 24/7 but low insulin through most of the day. Eating dinner at 5–6pm and then stopping creates a long overnight fast that compounds the metabolic benefits of the low-carb daytime period.",
+      "sources": ["DCEO – Dr. Ben Bikman"]
+    },
+    {
+      "id": "mh-005",
+      "headline": "Fasted training for longevity; fuelled training for performance",
+      "point": "Exercise goal determines fasted vs. fueled training. For longevity and metabolic health: exercise fasted — it extends fat burning and maintains insulin sensitivity. For performance (athletes, power output): take fuel beforehand. Resistance training and HIIT fasted work well for both men and women; prolonged aerobic exercise fasted is the exception where glucose depletion may cause issues.",
+      "sources": ["DCEO – Dr. Ben Bikman", "DCEO – Dr. Mindy Pelz", "DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "mh-006",
+      "headline": "Exogenous BHB preserves lean mass during weight loss",
+      "point": "Exogenous ketones (BHB) help the transition into a ketogenic diet and — per a published trial — preserved more lean muscle mass than control during a weight loss protocol. Useful as a tool during the adaptation phase or when maintaining muscle is a priority alongside fat loss.",
+      "sources": ["DCEO – Dr. Ben Bikman"]
+    },
+    {
+      "id": "mh-007",
+      "headline": "Ketones are anxiolytic, anti-depressive, and sharpen cognition",
+      "point": "BHB (the main ketone) has documented brain effects beyond fuel: anxiolytic (reduces anxiety via increased GABA), improves depression symptoms, enhances attention, memory, and cognition. Also increases BDNF. The brain and heart both preferentially use ketones when available, reducing glucose dependence. This is why ketogenic approaches are being investigated for Alzheimer's and dementia.",
+      "sources": ["DCEO – Dr. Ben Bikman", "DCEO – Dr. Mindy Pelz", "DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "mh-008",
+      "headline": "Cancer cells run on glucose — low-carb diets amplify chemotherapy",
+      "point": "Cancer cells rely primarily on glucose (and glutamine) as fuel — the Warburg effect, championed in modern research by Dr. Thomas Seyfried. Depriving cancer cells of glucose via ketogenic diet makes standard treatments like chemotherapy significantly more effective. This is a legitimate, research-backed rationale for low-carb eating beyond weight management.",
+      "sources": ["DCEO – Dr. Ben Bikman"]
+    },
+    {
+      "id": "mh-009",
+      "headline": "Insulinoma is the one contraindication — detectable by fasting glucose test",
+      "point": "Insulinoma (insulin-secreting pancreatic tumor) is the key contraindication for low-carb or ketogenic diets. A person with insulinoma cannot stop producing insulin; cutting carbs drives blood glucose dangerously low with no ketone production as backup. Detectable via: fast for 12 hours and check glucose — in healthy people glucose holds steady; in insulinoma patients it drops continuously.",
+      "sources": ["DCEO – Dr. Ben Bikman"]
+    },
+    {
+      "id": "mh-010",
+      "headline": "Fasting and calorie restriction are different physiologies",
+      "point": "Calorie restriction slows metabolic rate, triggers muscle breakdown alongside fat loss, and doesn't meaningfully lower insulin. Fasting creates a different hormonal state: insulin drops to its floor, fat stores become available, and the body preferentially burns visceral fat first. The body reads fasting as 'withdraw from the bank' rather than 'incoming supply is low.'",
+      "sources": ["DCEO – Dr. Mindy Pelz"]
+    },
+    {
+      "id": "mh-011",
+      "headline": "Belly fat = insulin excess; fasting targets visceral fat first",
+      "point": "Visceral fat (the protruding belly phenotype) is a direct marker of hyperinsulinemia. Visceral fat is metabolically distinct from subcutaneous fat: it produces IL-6, TNF-alpha, and other inflammatory cytokines, driving systemic inflammation (elevated CRP). After 12 hours of fasting, glycogen stores are depleted; fat mobilisation begins — and visceral fat is the first depot accessed.",
+      "sources": ["DCEO – Dr. Mindy Pelz"]
+    },
+    {
+      "id": "mh-012",
+      "headline": "Fasting protocol scales with goal: 12:12 → 18:6 → 36h → extended",
+      "point": "Protocol by goal: general visceral fat reduction = start with 12:12 for 2–3 weeks, then progress to 18:6. Significant weight loss/diabetes reversal = 48h fast once a week, or 3-day water fast every 9 days with OMAD on other days. Maintenance for healthy individuals = at minimum one 36-hour fast per month. Extended fasts (72+ days) have been done under medical supervision with black tea, coffee, water, electrolytes, and optional MCT oil for hunger.",
+      "sources": ["DCEO – Dr. Mindy Pelz"]
+    },
+    {
+      "id": "mh-013",
+      "headline": "Exercise at peak fast (2h before breaking it) maximizes growth hormone",
+      "point": "Growth hormone is elevated during fasting. Training at the peak of the fast — roughly 2 hours before the eating window opens — allows you to build and retain more muscle than fed training. This applies to resistance training and HIIT. Prolonged fasted aerobic exercise is the exception, where glucose depletion may cause muscle catabolism.",
+      "sources": ["DCEO – Dr. Mindy Pelz"]
+    },
+    {
+      "id": "mh-014",
+      "headline": "Autophagy: fasting triggers cellular recycling and new mitochondria",
+      "point": "After roughly 12–18 hours of fasting, cells enter autophagy — breaking down redundant or damaged organelles and exporting the debris. This includes mitochondrial autophagy (mitophagy): old, inefficient mitochondria are replaced with new ones that produce more ATP and fewer reactive oxygen species. The feeling of clarity after a fast is partly explained by this mitochondrial renewal.",
+      "sources": ["DCEO – Dr. Mindy Pelz"]
+    },
+    {
+      "id": "mh-015",
+      "headline": "Fasting mobilizes stem cells that repair blood vessels and boost immunity",
+      "point": "Fasting triggers the release of endothelial progenitor cells (stem cells from bone marrow) that repair the lining of blood vessels. Stem cell mobilisation also produces immunocytes, explaining the well-documented reduction in infections in people who fast regularly. This repair mechanism is separate from the weight loss benefits.",
+      "sources": ["DCEO – Dr. Mindy Pelz"]
+    },
+    {
+      "id": "mh-016",
+      "headline": "Ketones are a cleaner fuel: less oxidative stress, more BDNF",
+      "point": "Ketone metabolism produces fewer reactive oxygen species than glucose metabolism, reducing oxidative cellular damage. Ketogenesis also triggers BDNF — improving reflexes, visual acuity, and cognitive function. However, continuous ketosis is not the design state — feasting and fasting cyclically is the intended physiology.",
+      "sources": ["DCEO – Dr. Mindy Pelz"]
+    },
+    {
+      "id": "mh-017",
+      "headline": "Visceral fat doubles early mortality risk and drives systemic inflammation",
+      "point": "Visceral fat is metabolically active — constantly secreting inflammatory cytokines (IL-6, TNF-alpha) that damage cells and activate the immune system. This chronic immune activation pulls energy away from the brain (causing fatigue, brain fog, lethargy) and raises metastatic cancer risk by 44%. It doubles all-cause early mortality risk. Average amounts by age (men): 1.2 lb at 30, 1.7 lb at 40, 2.2 lb at 50, 2.7 lb at 60. 50% of men over 50 have excess visceral fat; 70% of women over 50 do.",
+      "sources": ["DCEO – Dr. Rhonda Patrick", "DCEO – Dr. Mindy Pelz"]
+    },
+    {
+      "id": "mh-018",
+      "headline": "Visceral fat is insulin-resistant — it breaks the glucose uptake loop",
+      "point": "Unlike subcutaneous fat, visceral fat does not respond to insulin. It continuously breaks down triglycerides into free fatty acids regardless of hormonal signals, blocking insulin from clearing glucose into the liver and muscles. The body overcompensates by producing more insulin, eventually crashing blood glucose — causing the energy slump and carb cravings ~1 hour after eating.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "mh-019",
+      "headline": "Two weeks of 4-hour sleep added 11% visceral fat with no weight change",
+      "point": "In a study of healthy young men, sleeping only 4 hours/night for 2 weeks resulted in 11% higher visceral fat with virtually no change on the scale. The mechanism: sleep deprivation causes insulin resistance, which causes visceral fat accumulation, which causes more insulin resistance — a self-reinforcing spiral. Body composition shifts before body weight does.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "mh-020",
+      "headline": "Aerobic exercise — not weights — is what specifically removes visceral fat",
+      "point": "Resistance training improves insulin sensitivity and overall metabolism but does not significantly move the needle on visceral fat loss. Aerobic exercise (running, cycling, swimming, jogging) with caloric deficit is the primary mechanism. Visceral fat is the first fat depot to go in any weight loss program — it responds faster than subcutaneous fat.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "mh-021",
+      "headline": "Exogenous ketones pause fat burning — don't use them during fat-loss fasts",
+      "point": "Taking exogenous ketones (BHB) while fasting for fat loss is counterproductive: the body detects circulating ketones and transiently shuts down lipolysis (fat breakdown). The effect lasts ~3 hours. Exogenous ketones are best used for cognitive performance during non-fat-loss periods, not during active fasting windows targeted at visceral fat reduction.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "mh-022",
+      "headline": "GLP-1 drugs are life-changing for obesity but carry real trade-offs",
+      "point": "GLP-1 receptor agonists (semaglutide/Ozempic, tirzepatide/Mounjaro) reduce hunger by slowing gastric emptying and affecting satiety hormones. Visceral fat, cardiovascular, and Alzheimer's disease risk all fall with weight loss. Key trade-offs: majority of users regain weight if they stop; up to 40% of weight lost may come from lean mass without resistance training and adequate protein; bone loss risk; gallstone risk; signal for kidney cancer increase. Appropriate for significant obesity; the case for use in people wanting to lose 10–15 lbs is weak.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-001",
+      "title": "Dr. Ben Bikman – Perfect Diet & Lifestyle Plan",
+      "outlet": "Diary of a CEO (DCEO)",
+      "type": "podcast",
+      "date": "2026-01",
+      "url": ""
+    },
+    {
+      "id": "src-002",
+      "title": "Dr. Mindy Pelz on Fasting & Metabolic Health",
+      "outlet": "Diary of a CEO (DCEO)",
+      "type": "podcast",
+      "date": "2026-06",
+      "url": ""
+    },
+    {
+      "id": "src-003",
+      "title": "Dr. Rhonda Patrick on Visceral Fat & Metabolic Health",
+      "outlet": "Diary of a CEO (DCEO)",
+      "type": "podcast",
+      "date": "2026-06",
+      "url": ""
+    }
+  ]
+}

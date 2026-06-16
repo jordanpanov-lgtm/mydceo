@@ -1,0 +1,60 @@
+{
+  "id": "supplements",
+  "title": "Supplements",
+  "tags": ["supplementation", "health", "longevity", "anti-aging"],
+  "summary": "The evidence-based core stack: omega-3, vitamin D3, magnesium, creatine, and a basic multivitamin covers most people's deficiencies and has cumulative longevity data behind it. Advanced additions: urolithin A for mitochondrial renewal, curcumin (phytosome form) for TNF-alpha reduction, liposomal glutathione for antioxidant support. Quality and third-party testing matter enormously — unregulated products frequently misdose or contain contaminants.",
+  "takeaways": [
+    {
+      "id": "su-001",
+      "headline": "Top 5 supplements in order: omega-3, vitamin D3, magnesium, creatine, multivitamin",
+      "point": "Dr. Rhonda Patrick's ranked evidence-based core stack: (1) Omega-3 fish oil — 90% of US population deficient; high omega-3 index = 5-year life expectancy increase, 66% lower Alzheimer's risk, slows epigenetic aging; need 1.6–2g/day EPA+DHA; keep refrigerated or frozen to prevent oxidation. (2) Vitamin D3 — not D2; D3 deficiency accelerates biological aging; supplementing when deficient slows aging by ~2 years. (3) Magnesium — 50% of population deficient; important for 300+ enzymes, DNA repair, sleep, cancer prevention. (4) Creatine — 5–10g/day; brain benefits at 10g+. (5) Multivitamin — daily supplementation reversed brain aging by 2.1 years and episodic memory aging by ~5 years in the COSMOS RCT.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "su-002",
+      "headline": "Omega-3 is the only supplement shown to slow epigenetic aging in healthy active people",
+      "point": "In a Swiss RCT (88% already physically active participants), only omega-3 supplementation — not vitamin D or resistance training added on top — slowed biological/epigenetic aging. Combined omega-3 + vitamin D + resistance training slowed it by 4 months after one year, translated to 60% lower pre-frailty risk and reduced cancer incidence. Test your omega-3 index (finger-prick blood spot) — target 8% for peak benefit.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "su-003",
+      "headline": "Urolithin A clears damaged mitochondria — 20% life extension in mice, real human data",
+      "point": "Urolithin A (produced from pomegranate polyphenols by gut bacteria, or supplemented directly) specifically triggers mitophagy — the clearing of damaged mitochondria. 50% of people lack the gut bacteria to produce it from food. Human clinical data: 1,000mg/day increased CD8+ T cells and natural killer cells (immune rejuvenation in older adults); improved VO2max by 10% in untrained and 5% in trained athletes on top of exercise; increased hamstring strength 10–12% vs exercise alone. Combined with exercise: exercise creates new mitochondria, urolithin A clears damaged ones.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "su-004",
+      "headline": "Phytosomal curcumin lowers TNF-alpha — the inflammatory driver of epigenetic aging",
+      "point": "Curcumin (from turmeric) is the most potent naturally occurring dietary compound shown to lower TNF-alpha — a major inflammatory cytokine that accelerates epigenetic aging. TNF-alpha inhibitor drugs reduce Alzheimer's disease risk by 50%. Curcumin achieves this without blunting exercise adaptations (unlike NSAIDs like ibuprofen). Standard curcumin is rapidly metabolised by the liver. Phytosomal delivery (Meriva-type) dramatically improves bioavailability — regular curcumin supplements are largely ineffective due to poor absorption.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "su-005",
+      "headline": "Regular glutathione supplements don't work — liposomal form is required",
+      "point": "Glutathione is a major intracellular antioxidant made inside cells. Oral glutathione supplements cannot cross the cell membrane — the body has no transporter for external glutathione. Standard supplements are essentially excreted without effect. Liposomal glutathione encapsulates the molecule in a lipid that fuses with the cell membrane, enabling intracellular delivery. Only the liposomal form has evidence of raising intracellular glutathione levels.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "su-006",
+      "headline": "Men should not supplement iron unless clinically deficient",
+      "point": "Most men do not need supplemental iron. Free iron is highly reactive — it causes oxidative stress, damages DNA, and accelerates aging. Haemochromatosis (iron overload from a common genetic variant) makes this even more dangerous. The only populations that generally need iron: pre-menopausal women (especially those who exercise heavily); vegans/vegetarians who don't eat meat. Always measure iron levels before supplementing — excess iron is actively harmful.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "su-007",
+      "headline": "Supplements are unregulated — third-party testing is non-negotiable",
+      "point": "Supplement companies are not required to verify ingredient amount or purity before sale. Products frequently contain too little active ingredient, too much (melatonin and vitamin D3 have been found at 1,000–10,000× stated doses), or contaminants. Third-party testing (ConsumerLab, NSF, USP) provides independent verification. This applies especially to creatine (lead contamination risk), fish oil (oxidation), and melatonin (wildly variable dosing documented in multiple studies). Price alone is not a quality signal.",
+      "sources": ["DCEO – Dr. Rhonda Patrick", "DCEO – Dr. Darren Candow"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-001",
+      "title": "Dr. Rhonda Patrick on Visceral Fat & Metabolic Health",
+      "outlet": "Diary of a CEO (DCEO)",
+      "type": "podcast",
+      "date": "2026-06",
+      "url": ""
+    }
+  ]
+}

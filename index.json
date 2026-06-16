@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Jordan's Knowledge Base",
+    "updated": "2026-06-16",
+    "version": "2.0",
+    "schema": "SCHEMA.md"
+  },
+  "topics": [
+    { "id": "creatine",               "file": "topics/creatine.json",               "title": "Creatine" },
+    { "id": "resistance-training",    "file": "topics/resistance-training.json",    "title": "Resistance Training" },
+    { "id": "sleep",                  "file": "topics/sleep.json",                  "title": "Sleep" },
+    { "id": "metabolic-health",       "file": "topics/metabolic-health.json",       "title": "Metabolic Health & Diet" },
+    { "id": "environmental-toxins",   "file": "topics/environmental-toxins.json",   "title": "Environmental Toxins & Endocrine Disruptors" },
+    { "id": "supplements",            "file": "topics/supplements.json",            "title": "Supplements" },
+    { "id": "peak-span",              "file": "topics/peak-span.json",              "title": "Peak Span & Cognitive Aging" },
+    { "id": "ai-economy",             "file": "topics/ai-economy.json",             "title": "AI & the Economy" }
+  ]
+}

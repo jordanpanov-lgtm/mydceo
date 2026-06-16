@@ -413,19 +413,34 @@
 </div>
 
 <script>
-// ── Load data ────────────────────────────────────────────────────────────────
-async function loadData() {
-  // Try fetching data.json (works when served via GitHub Pages or local server)
-  // Falls back to embedded stub so the file previews correctly even when opened
-  // directly from disk (file:// protocol blocks fetch in some browsers).
+// ── Data layer ───────────────────────────────────────────────────────────────
+const topicCache = {};   // id → full topic object once fetched
+
+async function loadIndex() {
   try {
-    const res = await fetch('./data.json');
+    const res = await fetch('./index.json');
     if (!res.ok) throw new Error('not found');
     return await res.json();
   } catch {
-    // Minimal fallback — replace with actual data.json content if needed
     return { meta: { title: "Knowledge Base", updated: "" }, topics: [] };
   }
+}
+
+async function loadTopic(stub) {
+  if (topicCache[stub.id]) return topicCache[stub.id];
+  try {
+    const res = await fetch('./' + stub.file);
+    if (!res.ok) throw new Error('not found');
+    const topic = await res.json();
+    topicCache[stub.id] = topic;
+    return topic;
+  } catch {
+    return null;
+  }
+}
+
+async function loadAllTopics(index) {
+  return Promise.all(index.topics.map(s => loadTopic(s)));
 }
 
 // ── Helpers ─────────────────────────────────────────────────────────────────
@@ -450,43 +465,54 @@ function formatPoint(text, query) {
 }
 
 // ── Render ───────────────────────────────────────────────────────────────────
-function renderSidebar(topics, activeId) {
+function renderSidebar(stubs, activeId) {
   const sidebar = document.getElementById('sidebar');
   const label = sidebar.querySelector('.sidebar-label');
   sidebar.innerHTML = '';
   sidebar.appendChild(label);
 
-  topics.forEach(topic => {
+  stubs.forEach(stub => {
+    const topic = topicCache[stub.id];
+    const count = topic ? topic.takeaways.length : '…';
     const a = document.createElement('a');
-    a.className = 'topic-nav-item' + (topic.id === activeId ? ' active' : '');
-    a.href = '#' + topic.id;
+    a.className = 'topic-nav-item' + (stub.id === activeId ? ' active' : '');
+    a.href = '#' + stub.id;
     a.innerHTML = `
-      <span>${escapeHtml(topic.title)}</span>
-      <span class="nav-count">${topic.takeaways.length}</span>
+      <span>${escapeHtml(stub.title)}</span>
+      <span class="nav-count">${count}</span>
     `;
     sidebar.appendChild(a);
   });
 }
 
-function renderStats(data) {
-  const totalTakeaways = data.topics.reduce((n, t) => n + t.takeaways.length, 0);
-  const totalSources   = data.topics.reduce((n, t) => n + t.sources.length, 0);
+function renderStats(index, loadedTopics) {
+  const totalTakeaways = loadedTopics.reduce((n, t) => n + (t ? t.takeaways.length : 0), 0);
+  const totalSources   = loadedTopics.reduce((n, t) => n + (t ? t.sources.length : 0), 0);
   return `
     <div class="stats-bar">
-      <div class="stat"><span class="stat-num">${data.topics.length}</span><span class="stat-label">Topics</span></div>
+      <div class="stat"><span class="stat-num">${index.topics.length}</span><span class="stat-label">Topics</span></div>
       <div class="stat"><span class="stat-num">${totalTakeaways}</span><span class="stat-label">Takeaways</span></div>
       <div class="stat"><span class="stat-num">${totalSources}</span><span class="stat-label">Sources</span></div>
-      ${data.meta.updated ? `<div class="stat"><span class="stat-num" style="font-size:14px;padding-top:4px">${escapeHtml(data.meta.updated)}</span><span class="stat-label">Last updated</span></div>` : ''}
+      ${index.meta.updated ? `<div class="stat"><span class="stat-num" style="font-size:14px;padding-top:4px">${escapeHtml(index.meta.updated)}</span><span class="stat-label">Last updated</span></div>` : ''}
     </div>`;
 }
 
 function renderCallout() {
   return `
     <div class="callout">
-      <strong>Adding content:</strong> Ask Claude to extract takeaways in the <code>data.json</code> format, 
-      then use Claude Code to merge the new topic or takeaways into <code>data.json</code> and push to GitHub. 
-      Existing takeaway IDs are preserved; new ones are appended. New sources are added to a topic's 
-      <code>sources[]</code> array and referenced in each takeaway's <code>sources[]</code>.
+      <strong>Adding content:</strong> Ask Claude to extract takeaways in the topic JSON format,
+      then use Claude Code to add the file to <code>topics/</code>, update <code>index.json</code>, and push to GitHub.
+      Existing takeaway IDs are preserved; new ones are appended.
+    </div>`;
+}
+
+function renderTopicSkeleton(stub) {
+  return `
+    <div class="topic-card" id="${escapeHtml(stub.id)}">
+      <div class="topic-header">
+        <h2 class="topic-title">${escapeHtml(stub.title)}</h2>
+      </div>
+      <div class="takeaways" style="padding:24px;color:var(--muted);font-size:13px;font-family:var(--font-mono)">Loading…</div>
     </div>`;
 }
 
@@ -507,7 +533,6 @@ function renderTopic(topic, query) {
       `<span class="takeaway-source-tag${multiSource ? ' multi' : ''}">${escapeHtml(s)}</span>`
     ).join('');
 
-    // Use headline if present, otherwise fall back to first sentence of point
     const headline = tw.headline
       ? highlight(tw.headline, query)
       : highlight(tw.point.split('.')[0], query);
@@ -539,74 +564,62 @@ function renderTopic(topic, query) {
     </div>`;
 }
 
-function renderMain(data, query) {
-  const main = document.getElementById('main');
-
-  const filtered = query
-    ? (() => {
-        const q = query.toLowerCase();
-        return data.topics.map(t => {
-          // Topic-level match: title, tags, summary, or any source name/title
-          const topicMatch =
-            t.title.toLowerCase().includes(q) ||
-            t.tags.some(tag => tag.toLowerCase().includes(q)) ||
-            (t.summary && t.summary.toLowerCase().includes(q)) ||
-            t.sources.some(s =>
-              s.title.toLowerCase().includes(q) ||
-              s.outlet.toLowerCase().includes(q)
-            );
-
-          // If the whole topic matches, show all takeaways
-          if (topicMatch) return { ...t, _topicMatch: true };
-
-          // Otherwise filter to matching takeaways only
-          const matchingTakeaways = t.takeaways.filter(tw =>
-            (tw.headline && tw.headline.toLowerCase().includes(q)) ||
-            tw.point.toLowerCase().includes(q) ||
-            tw.sources.some(s => s.toLowerCase().includes(q))
-          );
-          return matchingTakeaways.length > 0
-            ? { ...t, takeaways: matchingTakeaways }
-            : null;
-        }).filter(Boolean);
-      })()
-    : data.topics;
-
-  if (filtered.length === 0) {
-    main.innerHTML = `<div class="empty-state">No results for "${escapeHtml(query)}"</div>`;
-    return;
-  }
-
-  main.innerHTML =
-    renderStats(data) +
-    (!query ? renderCallout() : '') +
-    filtered.map(t => renderTopic(t, query)).join('');
-}
-
 // ── Accordion toggle ─────────────────────────────────────────────────────────
 function toggleTakeaway(el) {
   const isOpen = el.classList.contains('open');
-  // Close all others in the same takeaways list
   const siblings = el.parentElement.querySelectorAll('.takeaway');
   siblings.forEach(s => s.classList.remove('open'));
-  // If it wasn't open, open it; if it was, leave it closed (toggle off)
   if (!isOpen) el.classList.add('open');
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────────
 (async () => {
-  const data = await loadData();
+  const index = await loadIndex();
 
-  // Initial render
-  renderSidebar(data.topics, null);
-  renderMain(data, '');
+  document.title = index.meta.title || 'Knowledge Base';
+  document.querySelector('.header-title').textContent = index.meta.title || 'Knowledge Base';
 
-  // Update page title
-  document.title = data.meta.title || 'Knowledge Base';
-  document.querySelector('.header-title').textContent = data.meta.title || 'Knowledge Base';
+  // Render sidebar immediately from stubs (no takeaway counts yet)
+  renderSidebar(index.topics, null);
+
+  // Render skeleton cards so the layout is ready for IntersectionObserver
+  const main = document.getElementById('main');
+  main.innerHTML = index.topics.map(s => renderTopicSkeleton(s)).join('');
+
+  // Fetch each topic when its skeleton scrolls into view
+  const cardObserver = new IntersectionObserver(async entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      const id = entry.target.id;
+      const stub = index.topics.find(s => s.id === id);
+      if (!stub || topicCache[id]) continue;
+      cardObserver.unobserve(entry.target);
+      const topic = await loadTopic(stub);
+      if (!topic) return;
+      // Replace skeleton with full card
+      const el = document.getElementById(id);
+      if (el) el.outerHTML = renderTopic(topic, '');
+      // Update sidebar count now that we have the data
+      renderSidebar(index.topics, null);
+    }
+  }, { rootMargin: '200px' });
+
+  index.topics.forEach(s => {
+    const el = document.getElementById(s.id);
+    if (el) cardObserver.observe(el);
+  });
+
+  // Render stats bar once all topics are loaded
+  const allTopics = await loadAllTopics(index);
+  // Re-render main with full data (no query)
+  main.innerHTML =
+    renderStats(index, allTopics) +
+    renderCallout() +
+    allTopics.filter(Boolean).map(t => renderTopic(t, '')).join('');
+  renderSidebar(index.topics, null);
 
   // Sidebar highlight on scroll
-  const observer = new IntersectionObserver(entries => {
+  const scrollObserver = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
         document.querySelectorAll('.topic-nav-item').forEach(a => a.classList.remove('active'));
@@ -616,23 +629,56 @@ function toggleTakeaway(el) {
     });
   }, { threshold: 0.3 });
 
-  data.topics.forEach(t => {
+  allTopics.filter(Boolean).forEach(t => {
     const el = document.getElementById(t.id);
-    if (el) observer.observe(el);
+    if (el) scrollObserver.observe(el);
   });
 
-  // Search
+  // Search — requires all topics loaded (already done above)
   let debounce;
   document.getElementById('search').addEventListener('input', e => {
     clearTimeout(debounce);
     debounce = setTimeout(() => {
       const q = e.target.value.trim();
-      renderMain(data, q);
-      renderSidebar(data.topics, null);
-      // Re-observe after re-render
-      data.topics.forEach(t => {
+      if (!q) {
+        main.innerHTML =
+          renderStats(index, allTopics) +
+          renderCallout() +
+          allTopics.filter(Boolean).map(t => renderTopic(t, '')).join('');
+        renderSidebar(index.topics, null);
+        allTopics.filter(Boolean).forEach(t => {
+          const el = document.getElementById(t.id);
+          if (el) scrollObserver.observe(el);
+        });
+        return;
+      }
+
+      const ql = q.toLowerCase();
+      const filtered = allTopics.filter(Boolean).map(t => {
+        const topicMatch =
+          t.title.toLowerCase().includes(ql) ||
+          t.tags.some(tag => tag.toLowerCase().includes(ql)) ||
+          (t.summary && t.summary.toLowerCase().includes(ql)) ||
+          t.sources.some(s => s.title.toLowerCase().includes(ql) || s.outlet.toLowerCase().includes(ql));
+        if (topicMatch) return t;
+        const matchingTakeaways = t.takeaways.filter(tw =>
+          (tw.headline && tw.headline.toLowerCase().includes(ql)) ||
+          tw.point.toLowerCase().includes(ql) ||
+          tw.sources.some(s => s.toLowerCase().includes(ql))
+        );
+        return matchingTakeaways.length > 0 ? { ...t, takeaways: matchingTakeaways } : null;
+      }).filter(Boolean);
+
+      if (filtered.length === 0) {
+        main.innerHTML = `<div class="empty-state">No results for "${escapeHtml(q)}"</div>`;
+        return;
+      }
+
+      main.innerHTML = filtered.map(t => renderTopic(t, q)).join('');
+      renderSidebar(index.topics, null);
+      filtered.forEach(t => {
         const el = document.getElementById(t.id);
-        if (el) observer.observe(el);
+        if (el) scrollObserver.observe(el);
       });
     }, 180);
   });

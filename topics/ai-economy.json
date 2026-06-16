@@ -1,0 +1,122 @@
+{
+  "id": "ai-economy",
+  "title": "AI & the Economy",
+  "tags": ["AI", "work", "wealth", "career", "economics"],
+  "summary": "The economy is transitioning from physical assets to digital ones, with AI creating 'digital labor' that infuses every industry. Individuals who understand this shift and actively use AI tools will be on the right side of the wealth and power redistribution — those who don't risk being displaced by it.",
+  "takeaways": [
+    {
+      "id": "ae-001",
+      "headline": "AI creates digital labor — bits now do the work, not just store information",
+      "point": "For millennia wealth was tied to physical things. Computers and the internet shifted value to software and data (bits). AI is the next step: bits are no longer just materials — they now perform work. Marketing campaigns, legal agreements, design, tutoring — all achievable in minutes without hiring specialists. This is 'digital labor' and it is infusing every industry, every occupation, every home.",
+      "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+    },
+    {
+      "id": "ae-002",
+      "headline": "Audit your job: identify which tasks AI will eat vs. augment",
+      "point": "Not all job tasks face equal AI exposure. Break your role into component tasks and assess each: tasks that are routine, well-defined, or pattern-based are candidates for automation; tasks requiring judgment, creativity, relationships, or novel problem-solving are candidates for AI augmentation. Identifying which bucket each task falls into tells you where to invest in skills and where to let AI carry the load.",
+      "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+    },
+    {
+      "id": "ae-003",
+      "headline": "Build digital assets — they scale without factories, offices, or additional labor",
+      "point": "Digital assets (content, software, platforms, data, online audiences, intellectual property) have near-zero marginal cost to replicate and can travel at the speed of light. This means a single individual can leverage themselves in ways previous generations never could — one piece of work can reach and serve millions. The strategic priority is to build assets that compound and act as force multipliers, rather than trading only time for money.",
+      "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+    },
+    {
+      "id": "ae-004",
+      "headline": "Data is a superpower — more data means better navigation of economic shifts",
+      "point": "In the AI era, access to data and the ability to interpret it is a competitive advantage for both businesses and individuals. Using AI tools to process data about markets, consumer trends, and economic shifts allows faster and better decisions than relying on intuition alone. The gap between those who actively use AI to optimize their decisions and those who don't will widen over time.",
+      "sources": ["AI Wealth 101 – Michelle Meyer"]
+    },
+    {
+      "id": "ae-005",
+      "headline": "Power is shifting to those who actively use AI tools — not just those who build them",
+      "point": "AI is no longer limited to Silicon Valley. The redistribution of capability is happening across every sector — a radiologist reading scans, a farmer deciding how to plant, a coder reaching global clients. Power is accruing to businesses embracing AI tools and consumers actively using them, not just to the companies building the technology. The window to gain early-adopter advantage is open now.",
+      "sources": ["AI Wealth 101 – Michelle Meyer", "AI Wealth 101 – Erik Brynjolfsson"]
+    },
+    {
+      "id": "ae-006",
+      "headline": "Race with the machine, not against it — augmentation wins, replacement loses",
+      "point": "The critical strategic choice is whether to use AI to replace human work (automating tasks) or to augment it (making humans more capable). Individuals and organisations that frame AI as a tool to do more of what humans do uniquely — creativity, relationships, judgment, values — will reach new heights. The Daedalus parable: automating only what exists today produces a comfortable but stagnant civilisation — no antibiotics, no jet planes, no iPhones. The real opportunity is using AI to create entirely new things not yet imagined.",
+      "sources": ["AI Wealth 101 – Erik Brynjolfsson", "AI Work 101 – Erik Brynjolfsson"]
+    },
+    {
+      "id": "ae-007",
+      "headline": "AI will widen three inequality gaps: capital/labour, developed/developing, high/low skill",
+      "point": "Three compounding inequality risks: (1) Capital vs. labour — as routine work is automated, returns flow to capital holders rather than workers; (2) Developed vs. developing nations — countries leading AI investment will leap ahead of those without the capital to compete; (3) High-skilled vs. low-skilled workers — but this third gap is addressable: anyone who learns to effectively deploy AI tools can become a high-skilled worker, regardless of prior credentials.",
+      "sources": ["AI Wealth 101 – Dambisa Moyo"]
+    },
+    {
+      "id": "ae-008",
+      "headline": "Use AI to explore your own possibilities — it's a better career advisor than most",
+      "point": "AI can research product ideas for entrepreneurs, map industries for job-seekers, and identify courses for students — faster and more comprehensively than most human advisors. The practical recommendation: use AI as a dialogue partner to flesh out career and life possibilities, not just as a task executor. Having a conversation with AI about your options — where you want to go, what constraints you have — surfaces paths you wouldn't have found alone.",
+      "sources": ["AI Wealth 101 – Erik Brynjolfsson"]
+    },
+    {
+      "id": "ae-009",
+      "headline": "Technology is not destiny — human values determine whether AI helps or harms",
+      "point": "The direction AI takes is a choice, not an inevitability. As AI becomes more powerful, human values become more important — not less. The decisions about whether AI is used primarily to automate or to augment are made by individuals, companies, and policymakers. The human must remain the final judge of AI output — over-delegating and assuming AI can solve all problems is itself a danger.",
+      "sources": ["AI Wealth 101 – Erik Brynjolfsson", "AI Wealth 101 – Michelle Meyer", "AI Work 101 – Parth Patil"]
+    },
+    {
+      "id": "ae-010",
+      "headline": "Think of AI as a super-smart teammate, not a tool — it changes how you work",
+      "point": "The mental model shift that unlocks AI's value: stop treating it as software you operate and start treating it as a highly capable colleague you collaborate with. This reframe changes how you assign work, how you communicate with it, what you ask of it, and how you iterate on outputs. The most valuable employees in an AI world think like entrepreneurs — they direct, delegate, and synthesise rather than execute tasks themselves.",
+      "sources": ["AI Work 101 – Erik Brynjolfsson", "AI Work 101 – Cat Goetze"]
+    },
+    {
+      "id": "ae-011",
+      "headline": "Redesign your day: identify high-leverage tasks and offload the rest to AI",
+      "point": "The practical first step is a personal workflow audit — mapping your day into tasks that require your unique judgment, creativity, or relationships (high-leverage, keep these) versus tasks that are research, drafting, formatting, summarising, or routine processing (offloadable). Offloading the second category to AI frees time to concentrate exclusively on the first. The goal is to become a high-leverage worker — someone whose value is in direction and judgment, not execution volume.",
+      "sources": ["AI Work 101 – Cat Goetze"]
+    },
+    {
+      "id": "ae-012",
+      "headline": "Prompting is a skill: context + constraints + iteration is the formula",
+      "point": "Effective prompting is not about magic phrases — it is about giving AI sufficient context (who you are, what you need, why), clear constraints (format, length, tone, what to avoid), and then iterating on the output rather than accepting the first result. The 'Chief Question Officer' (CQO) framing: the new high-value skill is not having the right answer but asking the right questions. The quality of your output is directly proportional to the quality of your prompt and your willingness to refine it.",
+      "sources": ["AI Work 101 – Erik Brynjolfsson", "AI Work 101 – Parth Patil"]
+    },
+    {
+      "id": "ae-013",
+      "headline": "Multimodal AI means one person can now produce text, images, audio, video, and code",
+      "point": "Modern AI is not limited to text. A single person can now generate marketing copy, product images, audio narration, short-form video, and functional code — all without specialists. This is the practical mechanism behind the 'one-person unicorn': the combination of multimodal AI tools removes the team-size bottleneck that previously constrained individual output. The skill is knowing which tool to deploy for which task and how to chain them together.",
+      "sources": ["AI Work 101 – Parth Patil", "AI Work 101 – Cat Goetze"]
+    },
+    {
+      "id": "ae-014",
+      "headline": "'Vibe coding' — build functional software through natural language, no coding required",
+      "point": "Vibe coding is the practice of describing what you want software to do in plain language and having AI generate the code. This removes the technical barrier to building digital tools — anyone can now create a sales tracker, a marketing automation, a data dashboard, or a simple app without learning to code. The skill required is the ability to clearly describe desired functionality and to iterate on AI-generated outputs.",
+      "sources": ["AI Work 101 – Parth Patil"]
+    },
+    {
+      "id": "ae-015",
+      "headline": "AI agents let you orchestrate multiple systems simultaneously — you become a CEO of automation",
+      "point": "AI agents are systems that can take actions, chain tasks, and operate across multiple tools autonomously — browsing the web, writing files, sending data between systems. Orchestrating multiple agents lets one person manage workflows that previously required a team. The mindset shift is from 'doing tasks' to 'directing processes': you define the goal and constraints, the agents execute.",
+      "sources": ["AI Work 101 – Parth Patil", "AI Work 101 – Erik Brynjolfsson"]
+    },
+    {
+      "id": "ae-016",
+      "headline": "Aim AI at something you love first — curiosity accelerates mastery faster than obligation",
+      "point": "The fastest path to genuine AI fluency is to apply it to a domain you already care about rather than starting with abstract exercises. When you direct AI at a topic you love, you immediately see its capabilities and limits in context you understand, which builds intuition quickly. Confidence with AI tools comes from experience, not instruction — start using them and the insights about where they fit in your workflow will follow naturally.",
+      "sources": ["AI Work 101 – Parth Patil"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-001",
+      "title": "AI Wealth 101",
+      "outlet": "MasterClass",
+      "type": "course",
+      "date": "2026-06",
+      "url": ""
+    },
+    {
+      "id": "src-002",
+      "title": "AI Work 101",
+      "outlet": "MasterClass",
+      "type": "course",
+      "date": "2026-06",
+      "url": ""
+    }
+  ]
+}

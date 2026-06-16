@@ -1,0 +1,42 @@
+{
+  "id": "peak-span",
+  "title": "Peak Span & Cognitive Aging",
+  "tags": ["longevity", "cognition", "aging", "neuroscience", "performance"],
+  "summary": "Peak span — staying within 90% of your peak function across key systems — is a more ambitious target than health span (disease-free) or lifespan (duration). Most capacities peak around age 25 except crystallised intelligence (peaks ~45). Exercise, omega-3, novel learning, and sleep are the primary levers to maintain peak span across all systems simultaneously.",
+  "takeaways": [
+    {
+      "id": "ps-001",
+      "headline": "Peak span = staying within 90% of your peak — more ambitious than health span",
+      "point": "Three tiers of longevity: lifespan (years lived), health span (disease-free years), and peak span (years spent within 90% of peak function for key capacities). Most capacities peak around age 25: immune function, musculoskeletal strength and bone density, cardiorespiratory fitness (VO2max), and fluid cognitive function (processing speed, novel problem-solving). Crystallised intelligence (knowledge-based reasoning, pattern recognition from accumulated experience) peaks around age 40–45.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "ps-002",
+      "headline": "Aerobic exercise, omega-3, and novel learning are the multi-system peak span levers",
+      "point": "Interventions that maintain peak span across multiple systems simultaneously: (1) Aerobic exercise — increases BDNF, grows neurons, improves brain plasticity, maintains VO2max, supports immune function and musculoskeletal health; (2) Omega-3 — slows epigenetic aging, supports brain function, reduces cancer and cardiovascular mortality; (3) Novel cognitive engagement — learning new things triggers BDNF release, strengthens neural connections, builds cognitive reserve that delays dementia onset; (4) Sleep — critical for immune system aging, memory consolidation, and brain clearance.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "ps-003",
+      "headline": "Outsourcing thinking to AI may build cognitive debt — novelty is the key variable",
+      "point": "Brain connectivity is approximately halved when people outsource writing to AI vs. writing manually (EEG study). 83% of AI users couldn't recall details of text they had written with AI assistance. The mechanism: novelty drives BDNF and neural connection-building. If you're not genuinely engaging with new information — just accepting AI-generated output — you get the surface answer without building the underlying neural architecture. London taxi drivers (who memorise 25,000 streets) have physically enlarged hippocampi and very low Alzheimer's rates.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "ps-004",
+      "headline": "Visceral fat and testosterone decline drive a 200% visceral fat increase between 25–65",
+      "point": "Between ages 25 and 65, men experience approximately a 200% increase in visceral fat even if total body weight stays the same. Testosterone (which helps burn visceral fat) declines ~1%/year from age 30. Women experience an 8–10% annual visceral fat increase starting in perimenopause (typically mid-40s) as estrogen declines. Endocrine-disrupting chemicals (BPA, phthalates, PFAS) accelerate this by lowering testosterone and disrupting estrogen signalling.",
+      "sources": ["DCEO – Dr. Rhonda Patrick"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-001",
+      "title": "Dr. Rhonda Patrick on Visceral Fat & Metabolic Health",
+      "outlet": "Diary of a CEO (DCEO)",
+      "type": "podcast",
+      "date": "2026-06",
+      "url": ""
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "creatine",
+  "title": "Creatine",
+  "tags": ["supplementation", "health", "neuroscience", "exercise"],
+  "summary": "Creatine is the most researched supplement available. It supports ATP regeneration, benefits muscle, bone, and brain — with dose varying by goal and stress level. Safe across the lifespan with no credible contraindications in healthy individuals.",
+  "takeaways": [
+    {
+      "id": "cr-001",
+      "headline": "Body makes 1–3g/day; vegans respond best to supplementation",
+      "point": "The body makes 1–3g/day in the liver and brain only; 95% stored in muscle. Dietary sources are animal-based (red meat, seafood). Vegans/vegetarians respond best to supplementation since they start from zero.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-002",
+      "headline": "Dose by goal: 3–5g muscle, 8–12g bone, 10–30g stressed brain",
+      "point": "Dose by goal: muscle performance = 3–5g minimum, 7–8g optimal; bone health = 8–12g (exercise required, no bone benefit without it); brain under stress = 10–20g; acute severe stress (sleep deprivation, jet lag, exam crunch) = up to 20–30g short-term.",
+      "sources": ["DCEO – Dr. Darren Candow", "DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "cr-003",
+      "headline": "Brain only needs creatine when metabolically stressed",
+      "point": "A healthy brain makes enough creatine itself. Supplemental creatine for the brain is primarily relevant under metabolic stress: sleep deprivation, jet lag, intense cognitive load, night shifts. The more stressed the brain, the higher the effective dose.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-004",
+      "headline": "Loading phase is optional — 3–5g/day saturates in 30 days",
+      "point": "Loading phase (20g/day for 5–7 days) is the fastest way to saturate muscle but causes temporary GI irritation and water retention. Skipping it and taking 3–5g/day saturates muscle in ~30 days. Loading is optional.",
+      "sources": ["DCEO – Dr. Darren Candow", "DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "cr-005",
+      "headline": "Timing doesn't matter; split doses reduce GI discomfort",
+      "point": "Timing doesn't matter — morning, pre/during/post workout, before bed all equivalent. Splitting dose throughout the day reduces GI discomfort and jitteriness. Mixing into water during workout is a practical approach.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-006",
+      "headline": "Buy monohydrate only — Creapure + third-party tested",
+      "point": "Use creatine monohydrate only — all safety and efficacy data is based on this form. Look for: (1) Creapure label (German, highest purity), (2) NSF certified or equivalent third-party testing. ~90% of off-the-shelf products in one test contained no creatine.",
+      "sources": ["DCEO – Dr. Darren Candow", "DCEO – Dr. Rhonda Patrick"]
+    },
+    {
+      "id": "cr-007",
+      "headline": "High creatinine on bloodwork is a false positive, not kidney damage",
+      "point": "Elevated creatinine on bloodwork while supplementing is a false positive — not kidney damage. Always tell your doctor you're taking creatine. Randomized controlled trials over many years show no detrimental kidney effects.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-008",
+      "headline": "Water retention is temporary; long-term it builds lean mass",
+      "point": "Water retention only occurs during loading phase and resolves within a week. Long-term, water moves into muscle cells (osmotic effect), which actually stimulates protein synthesis. Net lean mass gain over 6 weeks: ~0.86kg, mostly lean tissue.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-009",
+      "headline": "Women benefit equally — especially post-menopausal bone preservation",
+      "point": "Women respond equally well to creatine: strength, endurance, lean mass gains, fat reduction, and bone preservation in post-menopausal women (reduced rate of hip bone density loss). Estrogen decline at menopause disrupts creatine metabolism, making supplementation more relevant.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-010",
+      "headline": "No credible evidence linking creatine to hair loss",
+      "point": "No evidence of hair loss at 5g doses. The original study used 20–25g/day and only showed elevated DHT within normal biological range — no follicle thinning was even measured.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-011",
+      "headline": "Cognitive benefits are invisible until you're under stress or fatigue",
+      "point": "Cognitive benefits don't feel like caffeine — you won't notice a boost. They show up as maintained performance under fatigue: memory tasks, cognitive speed (Stroop test), retention under sleep deprivation. Study: 20g before 21h sleep deprivation improved next-day performance.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-012",
+      "headline": "As a depression adjunct, creatine doubled remission rates in 8 weeks",
+      "point": "Mental health: as adjunct (not standalone) to antidepressants or CBT, creatine doubled remission rates in women with major depression over 8 weeks (Perry Renshaw group, Utah). Populations with depression, Alzheimer's, and concussion all show reduced baseline brain creatine.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-013",
+      "headline": "20g/day for 8 weeks raised brain creatine 11% in Alzheimer's patients",
+      "point": "Alzheimer's: 20g/day for 8 weeks increased brain creatine by 11% and improved cognitive test scores in a 20-patient trial. Also produced 1.9kg improvement in hand grip strength — a key predictor of survival in dementia patients.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-014",
+      "headline": "Anti-inflammatory for endurance athletes; reduces muscle damage markers",
+      "point": "Anti-inflammatory effect during long-duration endurance exercise (not acute weight training). 20g/day for 5 days pre-race reduced inflammation markers in Ironman athletes. Also decreases markers of muscle damage post-exercise.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-015",
+      "headline": "Muscle stays saturated ~1 month after stopping — no panic needed",
+      "point": "Creatine levels in muscle stay elevated for ~1 month after stopping. Brain levels take 5 weeks to 3 months to return to baseline. No need to panic about missed days.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    },
+    {
+      "id": "cr-016",
+      "headline": "Safe for adolescents, elderly, and likely pregnant women",
+      "point": "Safe for adolescents at recommended doses (≥1g/day for bone and muscle development). Safety profile across 25,000+ cases at 10g+/day for years is excellent. Pregnant women: evidence still emerging, currently appears safe.",
+      "sources": ["DCEO – Dr. Darren Candow"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-001",
+      "title": "Dr. Darren Candow on Creatine",
+      "outlet": "Diary of a CEO (DCEO)",
+      "type": "podcast",
+      "date": "2026-06",
+      "url": ""
+    }
+  ]
+}
