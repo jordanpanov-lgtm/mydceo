@@ -370,6 +370,54 @@
       color: var(--amber);
     }
 
+    /* ── Source pill ── */
+    .source-pill {
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+    }
+    .source-pill:hover {
+      background: #fde8c2;
+      border-color: var(--amber-dim);
+      box-shadow: 0 1px 4px rgba(201,122,26,0.15);
+    }
+    .source-pill.active-filter {
+      background: var(--amber);
+      color: #fff;
+      border-color: var(--amber);
+    }
+    .source-pill.active-filter .source-type { color: rgba(255,255,255,0.65); }
+    .source-pill.active-filter .source-dot  { background: #fff; }
+
+    /* ── Filter banner ── */
+    .filter-banner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--amber-bg);
+      border: 1px solid #f0d9aa;
+      border-left: 3px solid var(--amber);
+      border-radius: 6px;
+      padding: 10px 16px;
+      margin-bottom: 24px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .filter-banner strong { color: var(--text); }
+    .filter-clear {
+      margin-left: auto;
+      flex-shrink: 0;
+      background: none;
+      border: 1px solid var(--amber-dim);
+      border-radius: 12px;
+      padding: 3px 12px;
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--amber);
+      cursor: pointer;
+      transition: background 0.12s, color 0.12s;
+    }
+    .filter-clear:hover { background: var(--amber); color: #fff; border-color: var(--amber); }
+
     /* ── Scrollbar ── */
     ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: transparent; }
@@ -413,6 +461,11 @@
 </div>
 
 <script>
+// ── App state ────────────────────────────────────────────────────────────────
+let _allTopics = [];
+let _indexData  = null;
+let _activeFilter = null;  // { topicId, sourceId, source } | null
+
 // ── Data layer ───────────────────────────────────────────────────────────────
 const topicCache = {};   // id → full topic object once fetched
 
@@ -462,6 +515,70 @@ function formatPoint(text, query) {
   // Bold dose numbers like "3–5g", "20g", "8 weeks"
   out = out.replace(/(\b\d+[\u2013\-]?\d*\s?(?:g|mg|kg|lb|%|weeks?|days?|months?|hours?|min)\b)/g, '<strong>$1</strong>');
   return out;
+}
+
+// ── Source filter ────────────────────────────────────────────────────────────
+function takeawayMatchesSource(tw, source) {
+  return tw.sources.some(s => {
+    // "AI Wealth 101 – Speaker" starts with source title
+    if (s.startsWith(source.title)) return true;
+    // "DCEO – PersonName" where PersonName appears in source title
+    const dash = s.indexOf(' – ');
+    if (dash !== -1) {
+      const speaker = s.slice(dash + 3);
+      if (speaker.length > 2 && source.title.includes(speaker)) return true;
+    }
+    return false;
+  });
+}
+
+function setSourceFilter(topicId, sourceId) {
+  const topic = topicCache[topicId];
+  if (!topic) return;
+  const source = topic.sources.find(s => s.id === sourceId);
+  if (!source) return;
+  // Toggle off if same pill clicked again
+  if (_activeFilter && _activeFilter.topicId === topicId && _activeFilter.sourceId === sourceId) {
+    clearSourceFilter();
+    return;
+  }
+  _activeFilter = { topicId, sourceId, source };
+  applySourceFilter();
+}
+
+function clearSourceFilter() {
+  _activeFilter = null;
+  const main = document.getElementById('main');
+  main.innerHTML =
+    renderStats(_indexData, _allTopics) +
+    renderCallout() +
+    _allTopics.filter(Boolean).map(t => renderTopic(t, '')).join('');
+  document.getElementById('search').value = '';
+}
+
+function renderFilterBanner(source) {
+  return `
+    <div class="filter-banner">
+      <span>Source filter: <strong>${escapeHtml(source.outlet)} — ${escapeHtml(source.title)}</strong></span>
+      <button class="filter-clear" onclick="clearSourceFilter()">✕ clear filter</button>
+    </div>`;
+}
+
+function applySourceFilter() {
+  const { source } = _activeFilter;
+  const main = document.getElementById('main');
+  const filtered = _allTopics.filter(Boolean).map(t => {
+    const matching = t.takeaways.filter(tw => takeawayMatchesSource(tw, source));
+    return matching.length > 0 ? { ...t, takeaways: matching } : null;
+  }).filter(Boolean);
+
+  if (filtered.length === 0) {
+    main.innerHTML = renderFilterBanner(source) +
+      `<div class="empty-state">No takeaways found for this source.</div>`;
+    return;
+  }
+  main.innerHTML = renderFilterBanner(source) +
+    filtered.map(t => renderTopic(t, '')).join('');
 }
 
 // ── Render ───────────────────────────────────────────────────────────────────
@@ -517,13 +634,18 @@ function renderTopicSkeleton(stub) {
 }
 
 function renderTopic(topic, query) {
-  const sourcesHtml = topic.sources.map(s => `
-    <div class="source-pill">
+  const sourcesHtml = topic.sources.map(s => {
+    const isActive = _activeFilter && _activeFilter.topicId === topic.id && _activeFilter.sourceId === s.id;
+    return `
+    <div class="source-pill${isActive ? ' active-filter' : ''}"
+         onclick="setSourceFilter('${topic.id}', '${s.id}')"
+         title="Filter takeaways by this source">
       <span class="source-dot"></span>
       <span>${escapeHtml(s.outlet)} — ${escapeHtml(s.title)}</span>
       <span class="source-type">${escapeHtml(s.type)}</span>
       ${s.date ? `<span style="color:var(--faint);font-size:10px">${escapeHtml(s.date)}</span>` : ''}
-    </div>`).join('');
+    </div>`;
+  }).join('');
 
   const tagsHtml = topic.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
 
@@ -611,6 +733,8 @@ function toggleTakeaway(el) {
 
   // Render stats bar once all topics are loaded
   const allTopics = await loadAllTopics(index);
+  _allTopics = allTopics;
+  _indexData  = index;
   // Re-render main with full data (no query)
   main.innerHTML =
     renderStats(index, allTopics) +
@@ -639,6 +763,7 @@ function toggleTakeaway(el) {
   document.getElementById('search').addEventListener('input', e => {
     clearTimeout(debounce);
     debounce = setTimeout(() => {
+      _activeFilter = null;  // clear source filter when user searches
       const q = e.target.value.trim();
       if (!q) {
         main.innerHTML =
